@@ -1,0 +1,46 @@
+.footer{
+    display: none;
+    padding: 48px 0 86px 0;
+    background-color: $color-white40;
+    .wrapper{
+        margin-bottom: 54px;
+        ul{
+            width: 25%;
+            &:nth-child(2){
+                width: 20%;
+            }
+            &:nth-child(4){
+                width: 30%;
+            }
+            li{
+             margin-bottom: 12px;
+             a{
+                 display: inline-block;
+             }
+             .text-tsm{
+                 line-height: 28px;
+             }
+             .phonecall{
+                 height: 14px;
+                 width: 14px;
+                 fill:$color-grey20;
+             }
+             .social-media{
+                 height: 33px;
+                 width: 33px;
+                 margin-right: 20px;
+                 display: block;
+             }
+         }
+         .logo{
+             display: inline-block;
+             img{
+                 height: 39px;
+                 width: 186px;
+                 display: block;
+             }
+         }
+        }
+    }
+  
+}

@@ -1,6 +1,13 @@
 @import "./vendors/reset";
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/typography";
+@import "./base/utility";
+@import "./components/buttons";
+@import "./layout/layout";
+@import "./layout/header";
+@import "./layout/home";
+@import "./layout/document";
+@import "./layout/footer";
 
 
-body{
-    background-color: blue;
-}

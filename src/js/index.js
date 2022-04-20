@@ -15,3 +15,6 @@ ajax.onload = function(e) {
   document.body.insertBefore(div, document.body.childNodes[0]);
   div.classList.add('hide-svg');
 }
+
+
+import './fairrate'

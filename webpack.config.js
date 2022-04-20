@@ -7,7 +7,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 
 
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+// const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 // const { extendDefaultPlugins } = require("svgo");
 
 module.exports = {
@@ -93,46 +93,47 @@ module.exports = {
 
   
 
-  optimization: {
-    minimizer: [
+  // optimization: {
+  //   minimizer: [
 
-      new ImageMinimizerPlugin({
-        minimizer: {
-          implementation: ImageMinimizerPlugin.imageminMinify,
-          options: {
-            plugins: [
-              ["gifsicle", { interlaced: true }],
-              ["jpegtran", { progressive: true }],
-              ["optipng", { optimizationLevel: 5 }],
-              // Svgo configuration here https://github.com/svg/svgo#configuration
-              // [
-              //   "svgo",
-              //   {
-              //     plugins: extendDefaultPlugins([
-              //       {
-              //         name: "removeViewBox",
-              //         active: false,
-              //       },
-              //       {
-              //         name: "addAttributesToSVGElement",
-              //         params: {
-              //           attributes: [{ xmlns: "http://www.w3.org/2000/svg" }],
-              //         },
-              //       },
-              //     ]),
-              //   },
-              // ],
-            ],
-          },
-        },
-      }),
-    ]
-  },
+  //     new ImageMinimizerPlugin({
+  //       minimizer: {
+  //         implementation: ImageMinimizerPlugin.imageminMinify,
+  //         options: {
+  //           plugins: [
+  //             ["gifsicle", { interlaced: true }],
+  //             ["jpegtran", { progressive: true }],
+  //             ["optipng", { optimizationLevel: 5 }],
+  //             // Svgo configuration here https://github.com/svg/svgo#configuration
+  //             // [
+  //             //   "svgo",
+  //             //   {
+  //             //     plugins: extendDefaultPlugins([
+  //             //       {
+  //             //         name: "removeViewBox",
+  //             //         active: false,
+  //             //       },
+  //             //       {
+  //             //         name: "addAttributesToSVGElement",
+  //             //         params: {
+  //             //           attributes: [{ xmlns: "http://www.w3.org/2000/svg" }],
+  //             //         },
+  //             //       },
+  //             //     ]),
+  //             //   },
+  //             // ],
+  //           ],
+  //         },
+  //       },
+  //     }),
+  //   ]
+  // },
 
 
   devServer: {
     static: {
-      publicPath: '',
+      directory: path.join(__dirname, "./dist"),
+      serveIndex: true,
     },
     compress: true,
     devMiddleware: {
@@ -140,7 +141,7 @@ module.exports = {
     },
     port: 2002,
     watchFiles: {
-      paths: ['./src/*.html', 'dist/**/*'],
+      paths: ['./src/*.html', './src/**/*'],
       options: {
         usePolling: false,
       },
