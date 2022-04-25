@@ -183,9 +183,6 @@ table {
 .c-pc {
   color: #4ad5f6;
 }
-.c-sc {
-  color: #1dc679;
-}
 .c-white {
   color: #ffffff;
 }
@@ -270,6 +267,46 @@ table {
   padding-left: 40px;
 }
 
+.bg-primary {
+  background-color: #4ad5f6;
+}
+
+.bg-green {
+  background-color: #00cfc0;
+}
+
+.bg-purple {
+  background-color: #9c6ade;
+}
+
+.bg-brightblue {
+  background-color: #007ace;
+}
+
+.bg-iris {
+  background-color: #5c6ac4;
+}
+
+.bg-pink {
+  background-color: #de6a93;
+}
+
+.bg-white40 {
+  background-color: #f4f6f8;
+}
+
+.wd-75 {
+  width: 75%;
+}
+
+.wd-25 {
+  width: 25%;
+}
+
+.wd-90 {
+  width: 90%;
+}
+
 .btn {
   outline: 0;
   color: #ffffff;
@@ -279,7 +316,6 @@ table {
 }
 .btn-sm {
   padding: 12px 24px;
-  background-color: #1dc679;
 }
 .btn-md {
   padding: 15px 70px;
@@ -371,15 +407,18 @@ input[type=checkbox] {
   border-color: #4ad5f6;
   box-shadow: 0 0 0 1px #4ad5f6;
 }
-.dd-container .downarrow {
+
+.dropdown-wrapper {
+  cursor: pointer;
+  position: relative;
+}
+.dropdown-wrapper .downarrow {
   height: 14px;
   width: 10px;
   text-align: right;
   vertical-align: middle;
-}
-
-.dropdown-wrapper {
-  position: relative;
+  fill: #212b36;
+  vertical-align: middle;
 }
 .dropdown-wrapper .text-sm {
   vertical-align: middle;
@@ -393,8 +432,9 @@ input[type=checkbox] {
   display: none;
   background-color: #ffffff;
   border-radius: 3px;
+  text-align: left;
   right: 5px;
-  top: 54px;
+  top: 50px;
   padding: 20px 10px;
   box-shadow: 0 0 2px 2px #c4cdd5;
 }
@@ -731,12 +771,60 @@ section {
 
 .content-5 {
   padding: 14% 0 8% 0;
+  text-align: center;
 }
 .content-5 .res-container {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
   padding: 0px 10px;
+}
+.content-5 .result {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 3px;
+  width: calc(65% - 24px);
+}
+.content-5 .result .rate-list-wrapper {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 2px solid #dfe3e8;
+}
+.content-5 .result .rate-list-wrapper:first-child {
+  padding-top: 0;
+}
+.content-5 .result .rate-list-wrapper .rate-lists {
+  width: 25%;
+  text-align: left;
+}
+.content-5 .result .rate-list-wrapper .rate-lists:nth-child(3) {
+  text-align: center;
+}
+.content-5 .result .rate-list-wrapper .rate-lists:last-child {
+  text-align: right;
+}
+.content-5 .result .pills {
+  border-radius: 30px;
+  padding: 6px;
+  margin-right: 4px;
+}
+.content-5 .result .progress-bar {
+  height: 4px;
+  width: 64px;
+  background-color: #dfe3e8;
+  border-radius: 30px;
+  display: inline-block;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.content-5 .result .progress-bar i {
+  display: inline-block;
+}
+.content-5 .range {
+  width: 35%;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 3px;
 }
 
 .footer {

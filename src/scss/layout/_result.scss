@@ -7,4 +7,51 @@
         margin: 0 auto;
         padding: 0px 10px;
     }
+    .result{
+        background-color: $color-white;
+        padding: 16px;
+        border-radius: 3px;
+        width: calc(65% - 24px);
+        .rate-list-wrapper{
+            width: 100%;
+            padding: 20px 0;
+            border-bottom: 2px solid $color-paleblue;
+            &:first-child{
+                padding-top: 0;
+            }
+            .rate-lists{
+                width: 25%;
+                text-align: left;
+                &:nth-child(3){
+                    text-align: center;
+                }
+                &:last-child{
+                    text-align: right;
+                }
+            }
+        }
+        .pills{
+           border-radius: 30px;
+           padding: 6px;
+           margin-right: 4px;
+        }
+        .progress-bar{
+            height: 4px;
+            width:64px;
+            background-color: $color-paleblue;
+            border-radius: 30px;
+            display: inline-block;
+            margin-left: 6px;
+            vertical-align: middle;
+            i{
+                display: inline-block;
+            }
+        }
+    }
+    .range{
+        width:35%;
+        background-color: $color-white;
+        padding: 16px;
+        border-radius: 3px;
+    }
 }

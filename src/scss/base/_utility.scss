@@ -65,9 +65,7 @@
     &-pc{
         color: $primary-color;
     }
-    &-sc{
-        color: $secondary-color;
-    }
+    
     &-white{
           color: $color-white;
     }
@@ -146,4 +144,36 @@
 }
 .pdlt-40{
     padding-left: 40px;
+}
+
+.bg-primary{
+    background-color: $primary-color;
+}
+.bg-green{
+    background-color: $color-green;
+}
+.bg-purple{
+    background-color: $color-purple;
+}
+.bg-brightblue{
+    background-color: $color-brightblue;
+}
+.bg-iris{
+    background-color: $color-iris;
+}
+.bg-pink{
+    background-color: $color-pink;
+}
+.bg-white40{
+    background-color: $color-white40;
+}
+
+.wd-75{
+    width: 75%;
+}
+.wd-25{
+    width: 25%;
+}
+.wd-90{
+    width: 90%;
 }

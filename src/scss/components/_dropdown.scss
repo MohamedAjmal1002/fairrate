@@ -9,15 +9,19 @@
         border-color:$primary-color;
         box-shadow: 0 0 0 1px $primary-color;
     }
+    
+}
+.dropdown-wrapper{
+    cursor: pointer;
+    position: relative;
     .downarrow{
         height: 14px;
         width: 10px;
         text-align: right;
         vertical-align: middle;
+        fill: $color-grey60;
+        vertical-align: middle;
     }
-}
-.dropdown-wrapper{
-    position: relative;
     .text-sm{
         vertical-align: middle;
     }
@@ -31,9 +35,9 @@
     display: none;
     background-color: $color-white;
     border-radius: 3px;
-    // text-align: center;
+    text-align: left;
     right: 5px;
-    top: 54px;
+    top: 50px;
     padding: 20px 10px;
     box-shadow: 0 0 2px 2px $color-grey10;
     // transition: all .4s linear;
