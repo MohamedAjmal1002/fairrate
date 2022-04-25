@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'opensans';
-    src:url('.././fonts/opensans-variablefont_wdthwght-webfont.woff') format('woff');
+    src: url('.././fonts/opensans-variablefont_wdthwght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 
-.heading{
-    &-lg{
+.heading {
+    &-lg {
         font-size: 36px;
         line-height: 50px;
         // @include tablet{
@@ -18,37 +18,45 @@
         //     font-size: 32px;
         //     line-height: 46px;
         // }
-        
-    } 
-    &-md{
+
+    }
+
+    &-md {
         font-size: 32px;
         line-height: 44px;
-        @include tablet{
+
+        @include tablet {
             font-size: 28px;
             line-height: 40px;
         }
-        @include mobile{
+
+        @include mobile {
             font-size: 26px;
             line-height: 36px;
         }
     }
-    &-sm{
+
+    &-sm {
         font-size: 24px;
-        line-height: 34px; 
-        @include mobile{
+        line-height: 34px;
+
+        @include mobile {
             font-size: 22px;
             line-height: 32px;
         }
     }
-    &-tsm{
+
+    &-tsm {
         font-size: 22px;
-        line-height:30px;
-        @include mobile{
+        line-height: 30px;
+
+        @include mobile {
             font-size: 20px;
             line-height: 28px;
         }
     }
 }
+
 // .heading-lg{
 //     @extend .heading;
 //     font-size: 44px;
@@ -65,7 +73,7 @@
 //         font-size: 30px;
 //         line-height: 42px;
 //     }
-    
+
 // }
 // .heading-md{
 //     @extend .heading;
@@ -115,40 +123,45 @@
 //     font-size: 22px;
 //     line-height:30px;
 // }
-.text{
-    &-xlg{
+.text {
+    &-xlg {
         font-size: 18px;
         line-height: 24px;
     }
-    &-lg{
+
+    &-lg {
         font-size: 15px;
         line-height: 20px;
     }
-    &-md{
-       font-size: 14px;
-       line-height: 22px;
-    //    @include mobile{
-    //     font-size: 16px;
-    //     line-height: 22px;
-    // }
+
+    &-md {
+        font-size: 14px;
+        line-height: 22px;
+        //    @include mobile{
+        //     font-size: 16px;
+        //     line-height: 22px;
+        // }
     }
-    &-sm{
-        font-size:13px;
-        line-height:18px;
+
+    &-sm {
+        font-size: 13px;
+        line-height: 18px;
         // @include mobile{
         //     font-size: 14px;
         //     line-height: 20px;
         // }
     }
-    &-tsm{
-        font-size:12px;
-        line-height:17px;
+
+    &-tsm {
+        font-size: 12px;
+        line-height: 17px;
         // @include mobile{
         //     font-size: 12px;
         //     line-height: 18px;
         // }
     }
 }
+
 // .text-md{
 //     @extend .text;
 //     font-size: 18px;
@@ -184,8 +197,9 @@
 //     @extend .text;
 //     font-size:14px;
 //     line-height:20px;
-    
+
 // }
-.link{
+.link {
     color: $primary-color;
+    text-decoration: underline;
 }

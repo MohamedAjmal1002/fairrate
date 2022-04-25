@@ -1,28 +1,122 @@
-.content-3{
+.content-3 {
     display: none;
-   text-align: center;
-   max-width: 630px;
-   padding: 15% 0 8% 0;
-   margin: auto;
-   .heading-lg{
-       margin-bottom: 50px;
-   }
-   span{
-       padding: 14px 74px;
-       border: 1px solid $color-grey20;
-       color:$color-grey60;
-       text-transform: uppercase;
-       &:nth-child(3){
-           padding: 14px 86px;
-       }
-       &:hover{
-           background-color:$color-grey70;
-           color: $color-white;
-       }
-   }
-   img{
-       height: 563px;
-       width: 630px;
-       margin: 30px 0;
-   }
+    text-align: center;
+    max-width: 630px;
+    padding: 15% 0 8% 0;
+    margin: auto;
+
+    .heading-lg {
+        margin-bottom: 50px;
+    }
+
+    .select-wrapper {
+        margin-bottom: 30px;
+        font-size: 0;
+
+        .photo,
+        .proof {
+            width: 50%;
+            display: inline-block;
+            border: 1px solid $color-grey20;
+            color: $color-grey60;
+            padding: 12px 0;
+
+            &:hover {
+                background-color: $color-grey70;
+                color: $color-white;
+            }
+
+            span {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .upload-wrapper {
+        background-color: $color-white;
+        box-shadow: 0 0 4px 1px $color-grey10;
+
+        .upload-head {
+            padding: 20px 0;
+            border-bottom: 1px solid $color-grey10;
+        }
+
+        .drag-wrapper {
+            padding: 20px;
+            margin-bottom: 30px;
+            border-bottom:1px solid $color-grey10;
+
+            .drag-file {
+                padding: 30px 0 10px 0;
+                width: calc(55% - 30px);
+                margin-right: 30px;
+                border: 2px dashed $color-grey10;
+                border-radius: 3px;
+                background-color: $color-white30;
+                margin-bottom: 42px;
+
+                .upload-icon {
+                    width: 92px;
+                    height: 80px;
+                    margin-bottom: 16px;
+                }
+
+                .drag-text {
+                    padding: 0 40px;
+                    margin-bottom: 54px;
+                }
+            }
+
+            .drag-list {
+                width: 45%;
+                padding-top: 24px;
+                text-align: left;
+                margin-bottom: 42px;
+                ul{
+                    list-style-type: disc;
+                    &:first-child{
+                        list-style-type: none;
+                    }
+                }
+                
+            }
+        }
+
+        .file-wrapper {
+            width: 100%;
+            padding: 12px 0;
+            background-color: $color-white10;
+            // border-top:1px solid $color-grey10 ;
+            border-bottom:1px solid $color-grey10;
+            li{
+                width:20%;
+                &:nth-child(2),&:nth-child(3){
+                    width: 15%;
+                }
+                &:nth-child(4){
+                    width: 35%;
+                }
+                &:last-child{
+                    width: 10%;
+                }
+            }
+            a {
+                display: inline-block;
+            }
+
+            .drag-list-icon {
+                width: 18px;
+                height: 18px;
+                vertical-align: middle;
+
+            }
+
+            .delete {
+                width: 24px;
+                height: 24px;
+                display: block;
+            }
+        }
+    }
+
 }

@@ -1,0 +1,86 @@
+.dd-container{
+    padding: 12px 20px;
+    border: 1px solid $color-grey10;
+    border-radius: 3px;
+    background-color: $color-white;
+    margin-bottom: 180px;
+    cursor: pointer;
+    &:focus{
+        border-color:$primary-color;
+        box-shadow: 0 0 0 1px $primary-color;
+    }
+    .downarrow{
+        height: 14px;
+        width: 10px;
+        text-align: right;
+        vertical-align: middle;
+    }
+}
+.dropdown-wrapper{
+    position: relative;
+    .text-sm{
+        vertical-align: middle;
+    }
+    &.dropdown-open .dropdown-links{
+        display: block;
+
+    }
+}
+.dropdown-links {
+    position: absolute;
+    display: none;
+    background-color: $color-white;
+    border-radius: 3px;
+    // text-align: center;
+    right: 5px;
+    top: 54px;
+    padding: 20px 10px;
+    box-shadow: 0 0 2px 2px $color-grey10;
+    // transition: all .4s linear;
+    &.header-dd{
+        width: 150px;
+    }
+    &.input-dd{
+        width: 200px;
+        max-height: 120px;
+        overflow: auto;
+    }
+
+    li {
+        margin-bottom: 12px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &.active {
+        display: block;
+    }
+
+    a {
+        color: $color-grey40;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+}
+
+
+.arrow-down {
+    border: solid $color-grey60;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-left: 12px;
+    cursor: pointer;
+    transition:transform .2s linear;
+    vertical-align: middle;
+    background-color: transparent;
+    &.active{
+        transform: rotate(225deg);
+    }
+}

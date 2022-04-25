@@ -2,7 +2,9 @@ const path = require("path");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const SvgSpritemap = require('svg-spritemap-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {
+  CleanWebpackPlugin
+} = require('clean-webpack-plugin');
 // const ImageminPlugin = require("imagemin-webpack");
 
 
@@ -11,21 +13,20 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 // const { extendDefaultPlugins } = require("svgo");
 
 module.exports = {
-  mode:'development',
-    entry:{
-      main:path.resolve(__dirname,'src/js/index.js')
-    },
-  output:{
-    path:path.resolve(__dirname,'dist'),
+  mode: 'development',
+  entry: {
+    main: path.resolve(__dirname, 'src/js/index.js')
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
     publicPath: '/dist',
-    filename:'[name].js',
+    filename: '[name].js',
   },
 
-  module:{
-    rules:[
-      {
-        test:/\.scss$/,
-        use:[MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']          
+  module: {
+    rules: [{
+        test: /\.scss$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
 
 
@@ -60,13 +61,13 @@ module.exports = {
 
     ]
   },
-  
-  plugins:[
+
+  plugins: [
     new MiniCssExtractPlugin({
       filename: "[name].css"
     }),
 
-    new HtmlWebpackPlugin({  
+    new HtmlWebpackPlugin({
       filename: "index.html",
       template: './src/index.html'
     }),
@@ -76,7 +77,9 @@ module.exports = {
     new SvgSpritemap('./src/icons/*.svg', {
       output: {
         filename: 'spritemap.svg',
-        svg: {sizes: false},
+        svg: {
+          sizes: false
+        },
         svg4everybody: true,
         svgo: true,
       },
@@ -91,7 +94,7 @@ module.exports = {
     }),
   ],
 
-  
+
 
   // optimization: {
   //   minimizer: [
@@ -139,7 +142,7 @@ module.exports = {
     devMiddleware: {
       writeToDisk: true
     },
-    port: 2002,
+    port: 2323,
     watchFiles: {
       paths: ['./src/*.html', './src/**/*'],
       options: {
@@ -148,5 +151,5 @@ module.exports = {
     },
   },
 
- 
+
 };

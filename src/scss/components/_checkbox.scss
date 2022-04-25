@@ -1,0 +1,76 @@
+// .icon-check > .checkmark{
+
+// }
+input {
+    &::placeholder {
+        font-size: 14px;
+        color: $color-grey;
+    }
+    
+}
+
+.check {
+    position: relative;
+    margin-bottom: 12px;
+    padding: 12px 0 12px 52px;
+    border: 1px solid $color-grey10;
+    border-radius: 3px;
+    background-color: $color-white;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+   
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+}
+
+.checkmark {
+    position: absolute;
+    bottom: 8px;
+    left: 15px;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: 1px solid $color-grey10;
+    border-radius: 3px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    &::after {
+        left: 10px;
+        top: 6px;
+        width: 5px;
+        height: 10px;
+        border: 1px solid $primary-color;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+.check input:checked~.checkmark {
+    border-color: $primary-color;
+    box-shadow: 0 0 0 1px $primary-color;
+
+    &::after {
+        display: block;
+    }
+}

@@ -12,6 +12,7 @@
 
     &-sb{
         justify-content: space-between;
+       
     }
     &-sa{
         justify-content: space-around;
@@ -94,6 +95,9 @@
     &-grey70{
         color:$color-grey70;
     }
+    &-grey80{
+        color:$color-grey80;
+    }
     &-orange{
         color:$color-orange;
     }
@@ -120,4 +124,26 @@
     svg {
         display: none;
     }
+}
+
+.mgbt-60{
+    margin-bottom: 60px;
+}
+.mgbt-30{
+    margin-bottom: 30px;
+}
+.mgbt-24{
+    margin-bottom: 24px;
+}
+.mgbt-12{
+    margin-bottom: 12px;
+}
+.mgbt-8{
+    margin-bottom: 8px;
+}
+.mglt-8{
+    margin-left: 8px;
+}
+.pdlt-40{
+    padding-left: 40px;
 }

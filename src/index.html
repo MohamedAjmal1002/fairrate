@@ -23,29 +23,32 @@
                  <a href="javascript:void(0)" class="nav-menu text-md c-grey20">Home</a>
                  <a href="javascript:void(0)" class="nav-menu text-md c-grey20">Application</a>
                  <a href="javascript:void(0)" class="nav-menu text-md c-grey20">Documents</a>
-                 <svg class="bell">
-                     <use href="#Bell"></use>
-                 </svg>
-                 <img src="https://iili.io/VhwF7s.png" alt="avator" class="avator">
-                 <span class="text-sm c-grey60">
-                     Adrian Manea
-                 </span>
-                 <div class="dropdown"> 
-                     <button class="arrow-down">
-
-                     </button>
-                     <ul class="dropdown-links">
+                 <a href="javascript:void(0)" class="bell-icon">
+                     <svg class="bell">
+                         <use href="#Bell"></use>
+                     </svg>
+                 </a>
+                 <div class="dropdown-wrapper">
+                     <a href="javascript:void(0)" class="dropdown">
+                         <img src="https://iili.io/VhwF7s.png" alt="avator" class="avator">
+                         <span class="text-sm c-grey60">
+                             Adrian Manea
+                         </span>
+                         <i class="arrow-down">
+                         </i>
+                     </a>
+                     <ul class="dropdown-links header-dd">
                          <li>
                              <a href="javascript:void(0)" class="text-md c-grey-40">My Profile</a>
                          </li>
                          <li>
-                            <a href="javascript:void(0)" class="text-md c-grey-40">Log Out</a>
+                             <a href="javascript:void(0)" class="text-md c-grey-40">Log Out</a>
                          </li>
-                     </ul>                   
+                     </ul>
                  </div>
              </nav>
          </header>
-         <section class="home">
+         <section class="home content">
              <div class="content-1">
                  <h1 class="heading-lg c-grey60 w-sbold">
                      I'll get you an awesome price in seconds. Ready to go?
@@ -61,32 +64,285 @@
                  </div>
              </div>
          </section>
-         <section>
+         <section class="application content">
+             <div class="container">
+                 <div class="app-wrapper">
+                     <div class="app-content">
+                         <h2 class="heading-lg c-grey60 w-sbold mgbt-8">
+                             Fill the form on <br>the rights
+                         </h2>
+                         <p class="text-md c-grey80 mgbt-60">
+                             Fusce dapibus, tellus ac cursus commodo,
+                             tortor mauris condimentum nibh.
+                         </p>
+                         <p class="text-tsm c-grey40">
+                             Date of birth
+                         </p>
+                         <div class="input-container">
+                             <i class="input-icon">
+                                 <svg class="input-icon">
+                                     <use href="#email"></use>
+                                 </svg>
+                             </i>
+                             <input type="date">
+
+                         </div>
+                     </div>
+                     <div class="input-wrapper">
+                         <div class="input-container-sm">
+                             <div class="input-container">
+                                 <i class="input-icon">
+                                     <svg class="input-icon">
+                                         <use href="#location"></use>
+                                     </svg>
+                                 </i>
+                                 <input type="text" placeholder="Enter the exact address">
+                             </div>
+                             <div class="input-container">
+                                 <i class="input-icon">
+                                     <svg class="input-icon">
+                                         <use href="#email"></use>
+                                     </svg>
+                                 </i>
+                                 <input type="text" placeholder="Email Address">
+                             </div>
+                             <ul class="check-wrapper">
+                                 <li class="label-wrapper">
+                                     <label class="check">
+                                         <span class="text-lg c-grey50">coned</span>
+                                         <input type="checkbox" checked="checked">
+                                         <span class="checkmark"></span>
+                                     </label>
+                                 </li>
+                                 <li>
+                                     <label class="check">
+                                         <span class="text-lg c-grey50">Co-op</span>
+                                         <input type="checkbox" checked="checked">
+                                         <span class="checkmark"></span>
+                                     </label>
+                                 </li>
+                                 <li class="mgbt-30">
+                                     <label class="check">
+                                         <span class="text-lg c-grey50">House</span>
+                                         <input type="checkbox" checked="checked">
+                                         <span class="checkmark"></span>
+                                     </label>
+                                 </li>
+                             </ul>
+                             <div class="dropdown-wrapper dd-container">
+                                 <div class="dropdown fx fx-sb fx-vc">
+                                     <span class="text-sm c-grey40">
+                                         I don’t know
+                                     </span>
+                                     <i>
+                                         <svg class="downarrow">
+                                             <use href="#downarrow"></use>
+                                         </svg>
+                                     </i>
+                                     <ul class="dropdown-links input-dd">
+                                         <li><a href="javascript:void(0)" class="text-sm c-grey40"> This month</a></li>
+                                         <li><a href="javascript:void(0)" class="text-sm c-grey40">Next Month</a></li>
+                                         <li><a href="javascript:void(0)" class="text-sm c-grey40">December 2018</a>
+                                         </li>
+                                         <li><a href="javascript:void(0)" class="text-sm c-grey40">January 2019</a></li>
+                                         <li><a href="javascript:void(0)" class="text-sm c-grey40"> I don’t know</a>
+                                         </li>
+                                     </ul>
+
+                                 </div>
+
+                             </div>
+                         </div>
+                         <ul class="fx fx-sb fx-w">
+                             <li class="icon-check">
+                                 <label class="input-container check">
+                                     <svg class="checkbox-icon">
+                                         <use href="#criminal"></use>
+                                     </svg>
+                                     <span class="text-md c-grey50">Burglar Alarm</span>
+                                     <input type="checkbox" checked="checked">
+                                     <span class="checkmark"></span>
+                                 </label>
+                             </li>
+                             <li class="icon-check">
+                                 <label class="input-container check">
+                                     <svg class="checkbox-icon">
+                                         <use href="#fire"></use>
+                                     </svg>
+                                     <span class="text-md c-grey50">Burglar Alarm</span>
+                                     <input type="checkbox" checked="checked">
+                                     <span class="checkmark"></span>
+                                 </label>
+                             </li>
+                         </ul>
+                         <div class="fx fx-sb">
+                             <button class="btn btn-md text-md btn-dis">back
+
+                             </button>
+                             <button class="btn btn-md text-md">next
+
+                             </button>
+                         </div>
+                     </div>
+
+
+                 </div>
+             </div>
+
+         </section>
+
+         <section class="docunment content">
              <div class="content-3">
                  <h2 class="heading-lg c-grey60 w-sbold">
-                    Few more step ahead<br>
-                    upload your ID Document 👆
+                     Few more step ahead<br>
+                     upload your ID Document 👆
                  </h2>
-                 <span class="text-sm"> 
-                    Photo Indentification
-                 </span>
-                 <span class="text-sm"> 
-                    Proof of Address
-                 </span>
-                <img src="https://iili.io/Vwa0RS.md.png" 
-                srcset="https://iili.io/VwaHAP.md.png" 2x alt="photo Indentification">
-                <div class="fx fx-sb">
-                    <button class="btn btn-md text-md btn-dis"> back
+                 <ul class="select-wrapper">
+                     <li class="photo">
+                         <span class="text-sm text">
+                             Photo Indentification
+                         </span>
 
-                    </button>
-                    <button class="btn btn-md text-md"> next
+                     </li>
+                     <li class="proof">
+                         <span class="text-sm text">
+                             Proof of Address
+                         </span>
+                     </li>
+                 </ul>
 
-                    </button>
-                </div>
+                 <div class="upload-wrapper">
+                     <p class="text-lg c-grey40 upload-head">
+                         upload Photo Indentification
+                     </p>
+                     <div class="drag-wrapper fx fx-sb fx-w">
+                         <div class="drag-file">
+                             <svg class="upload-icon">
+                                 <use href="#upload-icon"></use>
+                             </svg>
+                             <p class="text-lg c-grey40 drag-text">
+                                 Drag files here to upload or
+                                 <a href="javascript:void(0)" class="link text-lg"> select a file</a> from your device
+
+                             </p>
+                             <p class="text-sm c-grey20">
+                                 JPG, PNG or PDF only, maximum file size - 5MB
+                             </p>
+
+                         </div>
+                         <div class="drag-list">
+                             <ul>
+                                 <li class="text-lg c-grey40 mgbt-24"> 
+                                     <p class="mgbt-24">Your document bust be:</p>
+                                     <ul class="pdlt-40">
+                                         <li class=" mgbt-12">A Governent issued</li>
+                                         <ul class=" mgbt-12 pdlt-40">
+                                             <li class="mgbt-8">Passport</li>
+                                             <li class="mgbt-8">Photo</li>
+                                             <li class="mgbt-8">License</li>
+                                         </ul>
+                                         <ul>
+                                            <li> Whithin it’s expiry date</li>
+                                        </ul>
+                                     </ul>
+                                    
+                                 </li>
+                             </ul>
+                             <a href="javascript:void(0)" class="link text-sm">See an example image</a>
+
+                         </div>
+                         </ul>
+                         <div class="file-wrapper">
+                             <ul class="file-list fx fx-sb fx-w fx-vc">
+                                 <li>
+                                     <a href="javascript:void(0)">
+                                         <svg class="drag-list-icon">
+                                             <use href="#pdf"></use>
+                                         </svg>
+                                         <span class="text-tsm c-grey20 mglt-8">
+                                             MY_ID.PDF
+                                         </span>
+                                     </a>
+                                 </li>
+                                 <li class="text-tsm c-grey20">
+                                     DPF
+                                 </li>
+                                 <li class="text-tsm c-grey20">
+                                     1MBs
+                                 </li>
+                                 <li class="text-tsm c-grey20"> UPLOADED</li>
+                                 <li>
+                                     <a href="javascript:void(0)">
+                                         <svg class="delete">
+                                             <use href="#delete"></use>
+                                         </svg>
+                                     </a>
+                                 </li>
+                             </ul>
+
+                         </div>
+                         <div class="file-wrapper">
+                             <ul class="file-list fx fx-sb fx-w fx-vc">
+                                 <li>
+                                     <a href="javascript:void(0)">
+                                         <svg class="drag-list-icon">
+                                             <use href="#images"></use>
+                                         </svg>
+                                         <span class="text-tsm c-grey20">
+                                            IMG1231.JPG
+                                         </span>
+                                     </a>
+                                 </li>
+                                 <li class="text-tsm c-grey20">
+                                     DPF
+                                 </li>
+                                 <li class="text-tsm c-grey20">
+                                     1MBs
+                                 </li>
+                                 <li class="text-tsm c-grey20"> UPLOADED</li>
+                                 <li>
+                                     <a href="javascript:void(0)">
+                                         <svg class="delete">
+                                             <use href="#delete"></use>
+                                         </svg>
+                                     </a>
+                                 </li>
+                             </ul>
+
+                         </div>
+                     </div>
+
+
+                 </div>
+                 <div class="fx fx-sb">
+                     <button class="btn btn-md text-md btn-dis"> back
+
+                     </button>
+                     <button class="btn btn-md text-md"> next
+
+                     </button>
+                 </div>
 
              </div>
 
          </section>
+
+
+
+         <section class="content-5">
+             <div class="res-container">
+                 <h2 class="heading-lg c-grey60 w-sbold mgbt-60">
+                    Your fairest results
+
+                 </h2>
+
+             </div>
+
+         </section>
+         
+
+
+ 
          <footer class="footer">
              <div class="container">
                  <div class="wrapper fx fx-sb fx-w">
@@ -96,27 +352,27 @@
                              <a href="javascript:void(0)" class="link text-tsm"> hello@fairrate.com</a>
                          </li>
                          <li>
-                            <svg class="phonecall">
-                                <use href="#phonecall"></use>
-                            </svg>
-                            <a href="tel:+62 202 555 0117" class="text-xlg c-grey40">+62 202 555 0117</a>
+                             <svg class="phonecall">
+                                 <use href="#phonecall"></use>
+                             </svg>
+                             <a href="tel:+62 202 555 0117" class="text-xlg c-grey40">+62 202 555 0117</a>
                          </li>
                          <li>
-                            <a href="javascript:void(0)">
-                                <svg class="social-media">
-                                    <use href="#twitter"></use>
-                                </svg>
-                            </a>
-                            <a href="javascript:void(0)">
-                                <svg class="social-media">
-                                    <use href="#linked-in"></use>
-                                </svg>
-                            </a>
-                            <a href="javascript:void(0)">
-                                <svg class="social-media">
-                                    <use href="#facebook"></use>
-                                </svg>
-                            </a>
+                             <a href="javascript:void(0)">
+                                 <svg class="social-media">
+                                     <use href="#twitter"></use>
+                                 </svg>
+                             </a>
+                             <a href="javascript:void(0)">
+                                 <svg class="social-media">
+                                     <use href="#linked-in"></use>
+                                 </svg>
+                             </a>
+                             <a href="javascript:void(0)">
+                                 <svg class="social-media">
+                                     <use href="#facebook"></use>
+                                 </svg>
+                             </a>
                          </li>
 
                      </ul>
@@ -165,7 +421,7 @@
                      </ul>
                  </div>
                  <p class="text-tsm c-grey20">
-                    © 2022 Deivas.io, Inc. All rights reserved.
+                     © 2022 Deivas.io, Inc. All rights reserved.
                  </p>
 
              </div>
@@ -177,3 +433,18 @@
  </body>
 
  </html>
+
+
+ <!-- <div class="dropdown-wrapper">
+     <button class="dropdown-button"></button>
+     <div class="dropdownmenu"></div>
+ </div>
+
+ <style>
+     .dropdownmenu {
+         display: none;
+     }
+     .open-dropdown .dropdownmenu {
+         display: block;
+     }
+ </style> -->
