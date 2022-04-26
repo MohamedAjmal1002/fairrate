@@ -13,7 +13,6 @@ input {
     position: relative;
     margin-bottom: 12px;
     padding: 12px 0 12px 52px;
-    border: 1px solid $color-grey10;
     border-radius: 3px;
     background-color: $color-white;
     display: inline-block;
@@ -24,6 +23,9 @@ input {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    .check-br{
+        border: 1px solid $color-grey10;
+    }
 
    
 }
@@ -74,3 +76,44 @@ input[type="checkbox"] {
         display: block;
     }
 }
+
+
+.check-sm{
+    @extend .check;
+    margin-bottom: 0;
+
+}
+.checkmark-sm{      
+    position: absolute;
+    bottom: 12px;
+    left: 20px;
+    height: 20px;
+    display: inline-block;
+    width: 20px;
+    border-radius: 3px;
+    // background-color: $color-green;
+    &::after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    &::after {
+        left: 7px;
+        top: 3px;
+        width: 4px;
+        height: 8px;
+        border: 1px solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+.check input:checked~.checkmark-sm {
+    &::after {
+        display: block;
+    }
+}
+
+    

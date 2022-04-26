@@ -1,5 +1,8 @@
 .fx{
     display: flex;
+    &-dc{
+        flex-direction: column;
+    }
 
     &-vc{
         align-items: center;
@@ -168,12 +171,13 @@
     background-color: $color-white40;
 }
 
-.wd-75{
-    width: 75%;
+.progress-c-primary{
+    &::-webkit-progress-value{
+        background-color: $primary-color;
+    }
 }
-.wd-25{
-    width: 25%;
-}
-.wd-90{
-    width: 90%;
+.progress-c-pink{
+    &::-webkit-progress-value{
+        background-color: $color-pink;
+    }
 }

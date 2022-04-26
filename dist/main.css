@@ -127,6 +127,9 @@ table {
 .fx {
   display: flex;
 }
+.fx-dc {
+  flex-direction: column;
+}
 .fx-vc {
   align-items: center;
 }
@@ -295,16 +298,12 @@ table {
   background-color: #f4f6f8;
 }
 
-.wd-75 {
-  width: 75%;
+.progress-c-primary::-webkit-progress-value {
+  background-color: #4ad5f6;
 }
 
-.wd-25 {
-  width: 25%;
-}
-
-.wd-90 {
-  width: 90%;
+.progress-c-pink::-webkit-progress-value {
+  background-color: #de6a93;
 }
 
 .btn {
@@ -335,11 +334,10 @@ input::placeholder {
   color: #adadad;
 }
 
-.check {
+.check, .check-sm {
   position: relative;
   margin-bottom: 12px;
   padding: 12px 0 12px 52px;
-  border: 1px solid #c4cdd5;
   border-radius: 3px;
   background-color: #ffffff;
   display: inline-block;
@@ -350,6 +348,9 @@ input::placeholder {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+.check .check-br, .check-sm .check-br {
+  border: 1px solid #c4cdd5;
 }
 
 input[type=checkbox] {
@@ -387,11 +388,45 @@ input[type=checkbox] {
   transform: rotate(45deg);
 }
 
-.check input:checked ~ .checkmark {
+.check input:checked ~ .checkmark, .check-sm input:checked ~ .checkmark {
   border-color: #4ad5f6;
   box-shadow: 0 0 0 1px #4ad5f6;
 }
-.check input:checked ~ .checkmark::after {
+.check input:checked ~ .checkmark::after, .check-sm input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.check-sm {
+  margin-bottom: 0;
+}
+
+.checkmark-sm {
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
+  height: 20px;
+  display: inline-block;
+  width: 20px;
+  border-radius: 3px;
+}
+.checkmark-sm::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkmark-sm::after {
+  left: 7px;
+  top: 3px;
+  width: 4px;
+  height: 8px;
+  border: 1px solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.check input:checked ~ .checkmark-sm::after, .check-sm input:checked ~ .checkmark-sm::after {
   display: block;
 }
 
@@ -434,7 +469,7 @@ input[type=checkbox] {
   border-radius: 3px;
   text-align: left;
   right: 5px;
-  top: 50px;
+  top: 40px;
   padding: 20px 10px;
   box-shadow: 0 0 2px 2px #c4cdd5;
 }
@@ -479,6 +514,29 @@ input[type=checkbox] {
   transform: rotate(225deg);
 }
 
+.slider input {
+  height: 4px;
+  width: 183px;
+  -webkit-appearance: none;
+  outline: none;
+  background-color: #c4cdd5;
+  border-radius: 30px;
+}
+.slider input::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  cursor: pointer;
+  appearance: none;
+  border: 1px solid #c4cdd5;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.slider input::-moz-range-progress {
+  background-color: #00cfc0;
+  height: 4px;
+  border-radius: 30px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -491,6 +549,13 @@ body {
 
 .container {
   max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.container-lg {
+  max-width: 1100px;
   width: 100%;
   margin: 0 auto;
   padding: 0px 10px;
@@ -773,15 +838,9 @@ section {
   padding: 14% 0 8% 0;
   text-align: center;
 }
-.content-5 .res-container {
-  max-width: 1100px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0px 10px;
-}
 .content-5 .result {
   background-color: #ffffff;
-  padding: 16px;
+  padding: 16px 16px 0;
   border-radius: 3px;
   width: calc(65% - 24px);
 }
@@ -804,26 +863,48 @@ section {
   text-align: right;
 }
 .content-5 .result .pills {
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 6px;
   margin-right: 4px;
 }
-.content-5 .result .progress-bar {
+.content-5 .result progress {
   height: 4px;
   width: 64px;
-  background-color: #dfe3e8;
-  border-radius: 30px;
-  display: inline-block;
   margin-left: 6px;
   vertical-align: middle;
+  appearance: none;
 }
-.content-5 .result .progress-bar i {
+.content-5 .result progress::-webkit-progress-value {
+  background-color: #00cfc0;
+  border-radius: 30px;
+}
+.content-5 .result progress::-webkit-progress-bar {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+.content-5 .result progress i {
   display: inline-block;
 }
 .content-5 .range {
   width: 35%;
   background-color: #ffffff;
+  padding: 32px 10px;
+  border-radius: 3px;
+}
+.content-5 .range .check-wrapper {
+  padding-bottom: 24px;
+  border-bottom: 2px solid #dfe3e8;
+}
+.content-5 .range .check-wrapper .check-list {
+  width: 50%;
+  text-align: left;
+}
+.content-5 .range .range-wrapper {
   padding: 16px;
+}
+.content-5 .range .range-wrapper .value {
+  padding: 4px 12px;
+  border: 1px solid #919eab;
   border-radius: 3px;
 }
 

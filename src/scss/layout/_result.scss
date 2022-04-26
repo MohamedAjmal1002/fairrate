@@ -1,15 +1,10 @@
 .content-5{
     padding: 14% 0 8% 0;
     text-align: center;
-    .res-container{
-        max-width: 1100px;
-        width: 100%;
-        margin: 0 auto;
-        padding: 0px 10px;
-    }
+    
     .result{
         background-color: $color-white;
-        padding: 16px;
+        padding: 16px 16px 0;
         border-radius: 3px;
         width: calc(65% - 24px);
         .rate-list-wrapper{
@@ -31,18 +26,24 @@
             }
         }
         .pills{
-           border-radius: 30px;
+           border-radius: 20px;
            padding: 6px;
            margin-right: 4px;
         }
-        .progress-bar{
+        progress{
             height: 4px;
             width:64px;
-            background-color: $color-paleblue;
-            border-radius: 30px;
-            display: inline-block;
             margin-left: 6px;
             vertical-align: middle;
+            appearance: none;
+            &::-webkit-progress-value {
+                background-color: $color-green;
+                border-radius: 30px;
+              }
+              &::-webkit-progress-bar{
+                  background-color: $color-white20;
+                  border-radius: 30px;
+              }
             i{
                 display: inline-block;
             }
@@ -51,7 +52,23 @@
     .range{
         width:35%;
         background-color: $color-white;
-        padding: 16px;
+        padding: 32px 10px;
         border-radius: 3px;
+        .check-wrapper{
+            padding-bottom: 24px;
+            border-bottom: 2px solid $color-paleblue;
+            .check-list{
+                width: 50%;
+                text-align: left;
+            }
+        }
+        .range-wrapper{
+            padding: 16px;
+            .value{
+                padding: 4px 12px;
+                border: 1px solid $color-grey20;
+                border-radius: 3px;
+            }
+        }
     }
 }

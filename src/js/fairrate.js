@@ -25,7 +25,16 @@ proofhead.addEventListener('click', () => {
     uploadhead.innerHTML = 'Upload Proof of Address'
 });
 
+//slider
 
+
+const slider = document.querySelector('input');
+const value = document.querySelector('.value');
+
+value.textContent = slider.value;
+slider.oninput = function(){
+    value.textContent = this.value; 
+}
 
 //button nav
 
@@ -50,12 +59,12 @@ proofhead.addEventListener('click', () => {
 
 // let currentTab=1;
 // $.("content1").style.display = "";
-// document.on('click', 'nav.multiTabs>a',
-// function(){
-// let TabId = this.attr('data-trigger');
-// $('div#'+TabId+' ').style.display = "";
-// console.log("current Tab: "+TabId");
-// currentTab = parseInt (TabId.replace("content", ""));
+// // document.on('click', 'nav.multiTabs>a',
+// // function(){
+// // let TabId = this.attr('data-trigger');
+// // $('div#'+TabId+' ').style.display = "";
+// // console.log("current Tab: "+TabId");
+// // currentTab = parseInt (TabId.replace("content", ""));
 
 // $('.tabcontent:not(#'+TabId+')').style.display = "none"
 // });

@@ -142,7 +142,7 @@ module.exports = {
     devMiddleware: {
       writeToDisk: true
     },
-    port: 2323,
+    port: 2222,
     watchFiles: {
       paths: ['./src/*.html', './src/**/*'],
       options: {
