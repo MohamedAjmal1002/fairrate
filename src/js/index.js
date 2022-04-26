@@ -7,7 +7,7 @@ import '../scss/main.scss';
 // import './icons/shower-icon.svg';
 
 const ajax = new XMLHttpRequest();
-ajax.open("GET", "./spritemap.svg", true);
+ajax.open("GET", "dist/spritemap.svg", true);
 ajax.send();
 ajax.onload = function(e) {
   const div = document.createElement("div");
