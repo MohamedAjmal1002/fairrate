@@ -104,7 +104,7 @@ eval("\n\n/* eslint-disable */\n\n/**\n * @param {string[]} pathComponents\n * @
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1650971567094\n      var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://webapp/./src/scss/main.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1650972774726\n      var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://webapp/./src/scss/main.scss?");
 
 /***/ }),
 
@@ -316,7 +316,7 @@ eval("const arrow = document.querySelector('.arrow-down');\r\nconst dropdown = d
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _fairrate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fairrate */ \"./src/js/fairrate.js\");\n/* harmony import */ var _fairrate__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_fairrate__WEBPACK_IMPORTED_MODULE_1__);\n\r\n// import './icons/arrow-icon.svg';\r\n// import './icons/arrow-right.svg';\r\n// import './icons/bed-icon.svg';\r\n// import './icons/chevron-icon.svg';\r\n// import './icons/search-icon.svg';\r\n// import './icons/shower-icon.svg';\r\n\r\nconst ajax = new XMLHttpRequest();\r\najax.open(\"GET\", \"./spritemap.svg\", true);\r\najax.send();\r\najax.onload = function(e) {\r\n  const div = document.createElement(\"div\");\r\n  div.innerHTML = ajax.responseText;\r\n  document.body.insertBefore(div, document.body.childNodes[0]);\r\n  div.classList.add('hide-svg');\r\n}\r\n\r\n\r\n;\n\n//# sourceURL=webpack://webapp/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _fairrate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fairrate */ \"./src/js/fairrate.js\");\n/* harmony import */ var _fairrate__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_fairrate__WEBPACK_IMPORTED_MODULE_1__);\n\r\n// import './icons/arrow-icon.svg';\r\n// import './icons/arrow-right.svg';\r\n// import './icons/bed-icon.svg';\r\n// import './icons/chevron-icon.svg';\r\n// import './icons/search-icon.svg';\r\n// import './icons/shower-icon.svg';\r\n\r\nconst ajax = new XMLHttpRequest();\r\najax.open(\"GET\", \"dist/spritemap.svg\", true);\r\najax.send();\r\najax.onload = function(e) {\r\n  const div = document.createElement(\"div\");\r\n  div.innerHTML = ajax.responseText;\r\n  document.body.insertBefore(div, document.body.childNodes[0]);\r\n  div.classList.add('hide-svg');\r\n}\r\n\r\n\r\n;\n\n//# sourceURL=webpack://webapp/./src/js/index.js?");
 
 /***/ })
 
@@ -414,7 +414,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("17758481719ac2d2a4d6")
+/******/ 		__webpack_require__.h = () => ("ccaef819aa372c005d6d")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
