@@ -24,6 +24,21 @@
                     text-align: right;
                 }
             }
+            
+        }
+        .rate-fees-head{
+            width: 100%;
+            .question{
+                width: 24px;
+                height: 24px;
+                fill: $primary-color;
+                vertical-align: middle;
+                margin-right: 12px;
+            }    
+            .rate-fees{
+                padding: 24px 0;
+                border-bottom: 2px solid $color-paleblue;
+            }
         }
         .pills{
            border-radius: 20px;
@@ -37,7 +52,6 @@
             vertical-align: middle;
             appearance: none;
             &::-webkit-progress-value {
-                background-color: $color-green;
                 border-radius: 30px;
               }
               &::-webkit-progress-bar{

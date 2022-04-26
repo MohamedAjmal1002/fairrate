@@ -298,8 +298,24 @@ table {
   background-color: #f4f6f8;
 }
 
+.progress-c-green::-webkit-progress-value {
+  background-color: #00cfc0;
+}
+
 .progress-c-primary::-webkit-progress-value {
   background-color: #4ad5f6;
+}
+
+.progress-c-brightblue::-webkit-progress-value {
+  background-color: #007ace;
+}
+
+.progress-c-iris::-webkit-progress-value {
+  background-color: #5c6ac4;
+}
+
+.progress-c-purple::-webkit-progress-value {
+  background-color: #9c6ade;
 }
 
 .progress-c-pink::-webkit-progress-value {
@@ -862,6 +878,20 @@ section {
 .content-5 .result .rate-list-wrapper .rate-lists:last-child {
   text-align: right;
 }
+.content-5 .result .rate-fees-head {
+  width: 100%;
+}
+.content-5 .result .rate-fees-head .question {
+  width: 24px;
+  height: 24px;
+  fill: #4ad5f6;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+.content-5 .result .rate-fees-head .rate-fees {
+  padding: 24px 0;
+  border-bottom: 2px solid #dfe3e8;
+}
 .content-5 .result .pills {
   border-radius: 20px;
   padding: 6px;
@@ -875,7 +905,6 @@ section {
   appearance: none;
 }
 .content-5 .result progress::-webkit-progress-value {
-  background-color: #00cfc0;
   border-radius: 30px;
 }
 .content-5 .result progress::-webkit-progress-bar {

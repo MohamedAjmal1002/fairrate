@@ -170,10 +170,29 @@
 .bg-white40{
     background-color: $color-white40;
 }
-
+.progress-c-green{
+    &::-webkit-progress-value{
+        background-color: $color-green;
+    }
+}
 .progress-c-primary{
     &::-webkit-progress-value{
         background-color: $primary-color;
+    }
+}
+.progress-c-brightblue{
+    &::-webkit-progress-value{
+        background-color: $color-brightblue;
+    }
+}
+.progress-c-iris{
+    &::-webkit-progress-value{
+        background-color: $color-iris;
+    }
+}
+.progress-c-purple{
+    &::-webkit-progress-value{
+        background-color: $color-purple;
     }
 }
 .progress-c-pink{
