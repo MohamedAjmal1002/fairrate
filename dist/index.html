@@ -34,10 +34,11 @@
                          <span class="text-sm c-grey60">
                              Adrian Manea
                          </span>
-                         <i class="arrow-down">
-                         </i>
+                         <svg class="downarrow">
+                             <use href="#downarrow"></use>
+                         </svg>
                      </a>
-                     <ul class="dropdown-links header-dd">
+                     <ul class="dropdown-links header-dd arrow arrow-top">
                          <li>
                              <a href="javascript:void(0)" class="text-md c-grey-40">My Profile</a>
                          </li>
@@ -48,23 +49,31 @@
                  </div>
              </nav>
          </header>
-         <section class="home content">
+
+
+         <!-- home page -->
+
+         <section class="home content active">
              <div class="content-1">
                  <h1 class="heading-lg c-grey60 w-sbold">
                      I'll get you an awesome price in seconds. Ready to go?
                  </h1>
                  <div class="input-wrapper">
-                     <input type="text" placeholder="First name" class="input-field">
-                     <input type="text" placeholder="Last name" class="input-field">
+                     <input type="text" placeholder="First name" class="input-field input">
+                     <input type="text" placeholder="Last name" class="input-field input">
                  </div>
                  <div class="button">
-                     <button class="btn btn-md text-md"> next
+                     <button class="btn btn-md text-md gotoNextPage" gotopageNumber="1"> next
 
                      </button>
                  </div>
              </div>
          </section>
-         <section class="application content">
+
+
+         <!-- application page -->
+
+         <section class="application content content-2">
              <div class="container">
                  <div class="app-wrapper">
                      <div class="app-content">
@@ -84,7 +93,7 @@
                                      <use href="#email"></use>
                                  </svg>
                              </i>
-                             <input type="date">
+                             <input type="date" class="input">
 
                          </div>
                      </div>
@@ -96,7 +105,7 @@
                                          <use href="#location"></use>
                                      </svg>
                                  </i>
-                                 <input type="text" placeholder="Enter the exact address">
+                                 <input type="text" placeholder="Enter the exact address" class="input">
                              </div>
                              <div class="input-container">
                                  <i class="input-icon">
@@ -104,7 +113,7 @@
                                          <use href="#email"></use>
                                      </svg>
                                  </i>
-                                 <input type="text" placeholder="Email Address">
+                                 <input type="text" placeholder="Email Address" class="input">
                              </div>
                              <ul class="check-wrapper">
                                  <li class="label-wrapper">
@@ -176,12 +185,12 @@
                              </li>
                          </ul>
                          <div class="fx fx-sb">
-                             <button class="btn btn-md text-md btn-dis">back
+                            <button class="btn btn-md text-md gotoNextPage" gotopageNumber="1"> Back
 
-                             </button>
-                             <button class="btn btn-md text-md">next
+                            </button>
+                             <button class="btn btn-md text-md gotoNextPage" gotopageNumber="3"> next
 
-                             </button>
+                            </button>
                          </div>
                      </div>
 
@@ -191,8 +200,11 @@
 
          </section>
 
-         <section class="docunment content">
-             <div class="content-3">
+
+         <!-- document page -->
+
+         <section class="docunment content content-3">
+             <div>
                  <h2 class="heading-lg c-grey60 w-sbold">
                      Few more step ahead<br>
                      upload your ID Document 👆
@@ -232,7 +244,7 @@
                          </div>
                          <div class="drag-list">
                              <ul>
-                                 <li class="text-lg c-grey40 mgbt-24"> 
+                                 <li class="text-lg c-grey40 mgbt-24">
                                      <p class="mgbt-24">Your document bust be:</p>
                                      <ul class="pdlt-40">
                                          <li class=" mgbt-12">A Governent issued</li>
@@ -242,10 +254,10 @@
                                              <li class="mgbt-8">License</li>
                                          </ul>
                                          <ul>
-                                            <li> Whithin it’s expiry date</li>
-                                        </ul>
+                                             <li> Whithin it’s expiry date</li>
+                                         </ul>
                                      </ul>
-                                    
+
                                  </li>
                              </ul>
                              <a href="javascript:void(0)" class="link text-sm">See an example image</a>
@@ -289,7 +301,7 @@
                                              <use href="#images"></use>
                                          </svg>
                                          <span class="text-tsm c-grey20">
-                                            IMG1231.JPG
+                                             IMG1231.JPG
                                          </span>
                                      </a>
                                  </li>
@@ -328,382 +340,385 @@
          </section>
 
 
+         <!-- results page -->
 
-         <section class="content-5">
+
+         <section class="content-5 content">
              <div class="container-lg">
                  <h2 class="heading-lg c-grey60 w-sbold mgbt-60">
-                    Your fairest results
+                     Your fairest results
 
                  </h2>
                  <div class="result-wrapper fx fx-sb fx-w">
                      <div class="result fx fx-sb fx-w">
-                        <ul class="rate-list-wrapper text-md c-grey60 fx fx-sb fx-w">
-                            <li class="rate-lists">RATE TYPE</li>
-                            <li class="rate-lists">FAIR RATE / APR</li>
-                            <li class="rate-lists">POINTS/CREDITS</li>
-                            <li class="rate-lists"> 
-                                <div class="dropdown-wrapper">
-                                <div class="dropdown">
-                                    <span class="text-md c-grey60">
-                                        PER MONTH
-                                    </span>
-                                    <i>
-                                        <svg class="downarrow">
-                                            <use href="#downarrow"></use>
-                                        </svg>
-                                    </i>
-                                    <ul class="dropdown-links">
-                                        <li><a href="javascript:void(0)" class="text-sm c-grey40"> PER DAY</a></li>
-                                        <li><a href="javascript:void(0)" class="text-sm c-grey40">PER WEEK</a></li>
-                                        <li><a href="javascript:void(0)" class="text-sm c-grey40">PER YEAR</a>
-                                        </li>
-                                        
-                                    </ul>
+                         <ul class="rate-list-wrapper text-md c-grey60 fx fx-sb fx-w">
+                             <li class="rate-lists">RATE TYPE</li>
+                             <li class="rate-lists">FAIR RATE / APR</li>
+                             <li class="rate-lists">POINTS/CREDITS</li>
+                             <li class="rate-lists">
+                                 <div class="dropdown-wrapper">
+                                     <div class="dropdown">
+                                         <span class="text-md c-grey60">
+                                             PER MONTH
+                                         </span>
+                                         <i>
+                                             <svg class="downarrow">
+                                                 <use href="#downarrow"></use>
+                                             </svg>
+                                         </i>
+                                         <ul class="dropdown-links">
+                                             <li><a href="javascript:void(0)" class="text-sm c-grey40"> PER DAY</a></li>
+                                             <li><a href="javascript:void(0)" class="text-sm c-grey40">PER WEEK</a></li>
+                                             <li><a href="javascript:void(0)" class="text-sm c-grey40">PER YEAR</a>
+                                             </li>
 
-                            </li>
-                        </ul>
-                        
-                        <ul class="rate-list-wrapper text-md c-grey60 fx fx-sb fx-w">
-                            <li class="rate-lists">
-                                <span class="bg-green text-tsm c-white pills">
-                                    15years
+                                         </ul>
 
-                                </span>
-                                <span class="bg-white40 text-tsm c-grey40 pills">
-                                    Fixed
+                             </li>
+                         </ul>
 
-                                </span>
+                         <ul class="rate-list-wrapper text-md c-grey60 fx fx-sb fx-w">
+                             <li class="rate-lists">
+                                 <span class="bg-green text-tsm c-white pills">
+                                     15years
 
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    4.250% 
-                                </span>
-                                <span class="text-md c-grey10">
-                                    / 5.125%
+                                 </span>
+                                 <span class="bg-white40 text-tsm c-grey40 pills">
+                                     Fixed
 
-                                </span>
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    -$1,532
+                                 </span>
 
-                                </span>
-                                <span>
-                                    <progress class="progress-bar progress-c-green" value="75" max="100">
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     4.250%
+                                 </span>
+                                 <span class="text-md c-grey10">
+                                     / 5.125%
 
-                                    </progress>
-                                </span>
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    $3,120
+                                 </span>
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     -$1,532
 
-                                </span>
-                                <span>
-                                    <progress class="progress-bar progress-c-green" value="75" max="100">
+                                 </span>
+                                 <span>
+                                     <progress class="progress-bar progress-c-green" value="75" max="100">
 
-                                    </progress>
-                                </span>
-                            </li>
-                        </ul>
-                        <ul class="rate-list-wrapper text-md c-grey60 fx fx-sb fx-w">
-                            <li class="rate-lists">
-                                <span class="bg-primary text-tsm c-white pills">
-                                    20years
+                                     </progress>
+                                 </span>
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     $3,120
 
-                                </span>
-                                <span class="bg-white40 text-tsm c-grey40 pills">
-                                    Fixed
+                                 </span>
+                                 <span>
+                                     <progress class="progress-bar progress-c-green" value="75" max="100">
 
-                                </span>
+                                     </progress>
+                                 </span>
+                             </li>
+                         </ul>
+                         <ul class="rate-list-wrapper text-md c-grey60 fx fx-sb fx-w">
+                             <li class="rate-lists">
+                                 <span class="bg-primary text-tsm c-white pills">
+                                     20years
 
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    4.650% 
-                                </span>
-                                <span class="text-md c-grey10">
-                                    / 5.215%
+                                 </span>
+                                 <span class="bg-white40 text-tsm c-grey40 pills">
+                                     Fixed
 
-                                </span>
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    -$625
+                                 </span>
 
-                                </span>
-                                <span>
-                                    <progress class="progress-bar progress-c-primary" value="90" max="100">
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     4.650%
+                                 </span>
+                                 <span class="text-md c-grey10">
+                                     / 5.215%
 
-                                    </progress>
-                                </span>
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    $2,585
+                                 </span>
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     -$625
 
-                                </span>
-                                <span>
-                                    <progress class="progress-bar progress-c-primary" value="75" max="100">
+                                 </span>
+                                 <span>
+                                     <progress class="progress-bar progress-c-primary" value="90" max="100">
 
-                                    </progress>
-                                </span>
-                            </li>
-                        </ul>
+                                     </progress>
+                                 </span>
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     $2,585
 
-                        <ul class="rate-list-wrapper text-md c-grey60 fx fx-sb fx-w">
-                            <li class="rate-lists">
-                                <span class="bg-brightblue text-tsm c-white pills">
-                                    30years
+                                 </span>
+                                 <span>
+                                     <progress class="progress-bar progress-c-primary" value="75" max="100">
 
-                                </span>
-                                <span class="bg-white40 text-tsm c-grey40 pills">
-                                    Fixed
+                                     </progress>
+                                 </span>
+                             </li>
+                         </ul>
 
-                                </span>
+                         <ul class="rate-list-wrapper text-md c-grey60 fx fx-sb fx-w">
+                             <li class="rate-lists">
+                                 <span class="bg-brightblue text-tsm c-white pills">
+                                     30years
 
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    4.875%
-                                </span>
-                                <span class="text-md c-grey10">
-                                    / 4.875%
+                                 </span>
+                                 <span class="bg-white40 text-tsm c-grey40 pills">
+                                     Fixed
 
-                                </span>
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    -$1,625
-                                </span>
-                                <span>
-                                    <progress class="progress-bar progress-c-brightblue" value="30" max="100">
+                                 </span>
 
-                                    </progress>
-                                </span>
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    -$2,585
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     4.875%
+                                 </span>
+                                 <span class="text-md c-grey10">
+                                     / 4.875%
 
-                                </span>
-                                <span>
-                                    <progress class="progress-bar progress-c-brightblue" value="90" max="100">
+                                 </span>
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     -$1,625
+                                 </span>
+                                 <span>
+                                     <progress class="progress-bar progress-c-brightblue" value="30" max="100">
 
-                                    </progress>
-                                </span>
-                            </li>
-                        </ul><ul class="rate-list-wrapper text-md c-grey60 fx fx-sb fx-w">
-                            <li class="rate-lists">
-                                <span class="bg-iris text-tsm c-white pills">
-                                   10/1
-                                </span>
-                                <span class="bg-white40 text-tsm c-grey40 pills">
-                                    Adjustable
+                                     </progress>
+                                 </span>
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     -$2,585
 
-                                </span>
+                                 </span>
+                                 <span>
+                                     <progress class="progress-bar progress-c-brightblue" value="90" max="100">
 
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    4.750%
-                                </span>
-                                <span class="text-md c-grey10">
-                                    / 4.875%
+                                     </progress>
+                                 </span>
+                             </li>
+                         </ul>
+                         <ul class="rate-list-wrapper text-md c-grey60 fx fx-sb fx-w">
+                             <li class="rate-lists">
+                                 <span class="bg-iris text-tsm c-white pills">
+                                     10/1
+                                 </span>
+                                 <span class="bg-white40 text-tsm c-grey40 pills">
+                                     Adjustable
 
-                                </span>
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    -$154
-                                </span>
-                                <span>
-                                    <progress class="progress-bar progress-c-iris" value="75" max="100">
+                                 </span>
 
-                                    </progress>
-                                </span>
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    $2,072
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     4.750%
+                                 </span>
+                                 <span class="text-md c-grey10">
+                                     / 4.875%
 
-                                </span>
-                                <span>
-                                    <progress class="progress-bar progress-c-iris" value="75" max="100">
+                                 </span>
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     -$154
+                                 </span>
+                                 <span>
+                                     <progress class="progress-bar progress-c-iris" value="75" max="100">
 
-                                    </progress>
-                                </span>
-                            </li>
-                        </ul>
+                                     </progress>
+                                 </span>
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     $2,072
 
-                        <ul class="rate-list-wrapper text-md c-grey60 fx fx-sb fx-w">
-                            <li class="rate-lists">
-                                <span class="bg-purple text-tsm c-white pills">
-                                   7/1
-                                </span>
-                                <span class="bg-white40 text-tsm c-grey40 pills">
-                                    Adjustable
+                                 </span>
+                                 <span>
+                                     <progress class="progress-bar progress-c-iris" value="75" max="100">
 
-                                </span>
+                                     </progress>
+                                 </span>
+                             </li>
+                         </ul>
 
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    4.750%
-                                </span>
-                                <span class="text-md c-grey10">
-                                    / 4.875%
+                         <ul class="rate-list-wrapper text-md c-grey60 fx fx-sb fx-w">
+                             <li class="rate-lists">
+                                 <span class="bg-purple text-tsm c-white pills">
+                                     7/1
+                                 </span>
+                                 <span class="bg-white40 text-tsm c-grey40 pills">
+                                     Adjustable
 
-                                </span>
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    -$154
-                                </span>
-                                <span>
-                                    <progress class="progress-bar progress-c-purple" value="75" max="100">
+                                 </span>
 
-                                    </progress>
-                                </span>
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    $2,072
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     4.750%
+                                 </span>
+                                 <span class="text-md c-grey10">
+                                     / 4.875%
 
-                                </span>
-                                <span>
-                                    <progress class="progress-bar progress-c-purple" value="75" max="100">
+                                 </span>
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     -$154
+                                 </span>
+                                 <span>
+                                     <progress class="progress-bar progress-c-purple" value="75" max="100">
 
-                                    </progress>
-                                </span>
-                            </li>
-                        </ul>
+                                     </progress>
+                                 </span>
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     $2,072
 
-                        <ul class="rate-list-wrapper text-md c-grey60 fx fx-sb fx-w">
-                            <li class="rate-lists">
-                                <span class="bg-pink text-tsm c-white pills">
-                                   5/1
-                                </span>
-                                <span class="bg-white40 text-tsm c-grey40 pills">
-                                    Adjustable
+                                 </span>
+                                 <span>
+                                     <progress class="progress-bar progress-c-purple" value="75" max="100">
 
-                                </span>
+                                     </progress>
+                                 </span>
+                             </li>
+                         </ul>
 
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    4.750%
-                                </span>
-                                <span class="text-md c-grey10">
-                                    / 4.875%
+                         <ul class="rate-list-wrapper text-md c-grey60 fx fx-sb fx-w">
+                             <li class="rate-lists">
+                                 <span class="bg-pink text-tsm c-white pills">
+                                     5/1
+                                 </span>
+                                 <span class="bg-white40 text-tsm c-grey40 pills">
+                                     Adjustable
 
-                                </span>
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    -$154
-                                </span>
-                                <span>
-                                    <progress class="progress-bar progress-c-pink" value="75" max="100">
+                                 </span>
 
-                                    </progress>
-                                </span>
-                            </li>
-                            <li class="rate-lists">
-                                <span class="text-md c-grey40">
-                                    $2,072
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     4.750%
+                                 </span>
+                                 <span class="text-md c-grey10">
+                                     / 4.875%
 
-                                </span>
-                                <span>
-                                    <progress class="progress-bar progress-c-pink" value="75" max="100">
+                                 </span>
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     -$154
+                                 </span>
+                                 <span>
+                                     <progress class="progress-bar progress-c-pink" value="75" max="100">
 
-                                    </progress>
-                                </span>
-                            </li>
-                        </ul>
-                        <ul class="fx fx-sb fx-vc fx-w rate-fees-head">
-                            <li class="text-sm c-grey70 rate-fees">
-                                <span>
-                                    <svg class="question">
-                                        <use href="#question"></use>
-                                    </svg>
-                                </span>
-                                Rates and fees as of 12:06 PM
-                            </li>
-                            <li>
-                                <button class="btn btn-md">NEXT
+                                     </progress>
+                                 </span>
+                             </li>
+                             <li class="rate-lists">
+                                 <span class="text-md c-grey40">
+                                     $2,072
 
-                                </button>
-                            </li>
-                        </ul>
+                                 </span>
+                                 <span>
+                                     <progress class="progress-bar progress-c-pink" value="75" max="100">
+
+                                     </progress>
+                                 </span>
+                             </li>
+                         </ul>
+                         <ul class="fx fx-sb fx-vc fx-w rate-fees-head">
+                             <li class="text-sm c-grey70 rate-fees">
+                                 <span>
+                                     <svg class="question">
+                                         <use href="#question"></use>
+                                     </svg>
+                                 </span>
+                                 Rates and fees as of 12:06 PM
+                             </li>
+                             <li>
+                                 <button class="btn btn-md">NEXT
+
+                                 </button>
+                             </li>
+                         </ul>
 
 
                      </div>
                      <div class="range">
                          <ul class="check-wrapper fx fx-sb fx-w">
-                            <li class="check-list">
-                                <label class="check">
-                                    <span class="text-lg c-grey50">Fixed</span>
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </li>
-                            <li class="check-list">
-                                <label class="check">
-                                    <span class="text-lg c-grey50">Adjustable</span>
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </li>
-                            <li class="check-list">
-                                <label class="check-sm">
-                                    <span class="text-sm c-grey70">15 years</span>
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark-sm bg-green"></span>
-                                </label>
+                             <li class="check-list">
+                                 <label class="check check-sm">
+                                     <span class="text-lg c-grey50">Fixed</span>
+                                     <input type="checkbox" checked="checked">
+                                     <span class="checkmark"></span>
+                                 </label>
+                             </li>
+                             <li class="check-list">
+                                 <label class="check check-sm">
+                                     <span class="text-lg c-grey50">Adjustable</span>
+                                     <input type="checkbox" checked="checked">
+                                     <span class="checkmark"></span>
+                                 </label>
+                             </li>
+                             <li class="check-list">
+                                 <label class="check-sm">
+                                     <span class="text-sm c-grey70">15 years</span>
+                                     <input type="checkbox" checked="checked">
+                                     <span class="checkmark-sm bg-green"></span>
+                                 </label>
 
-                            </li>
-                            <li class="check-list">
-                                <label class="check-sm">
-                                    <span class="text-sm c-grey70">10/1</span>
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark-sm bg-iris"></span>
-                                </label>
+                             </li>
+                             <li class="check-list">
+                                 <label class="check-sm">
+                                     <span class="text-sm c-grey70">10/1</span>
+                                     <input type="checkbox" checked="checked">
+                                     <span class="checkmark-sm bg-iris"></span>
+                                 </label>
 
-                            </li>
-                            <li class="check-list">
-                                <label class="check-sm">
-                                    <span class="text-sm c-grey70">20 years</span>
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark-sm bg-primary"></span>
-                                </label>
+                             </li>
+                             <li class="check-list">
+                                 <label class="check-sm">
+                                     <span class="text-sm c-grey70">20 years</span>
+                                     <input type="checkbox" checked="checked">
+                                     <span class="checkmark-sm bg-primary"></span>
+                                 </label>
 
-                            </li>
-                            <li class="check-list">
-                                <label class="check-sm">
-                                    <span class="text-sm c-grey70">7/1</span>
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark-sm bg-purple"></span>
-                                </label>
+                             </li>
+                             <li class="check-list">
+                                 <label class="check-sm">
+                                     <span class="text-sm c-grey70">7/1</span>
+                                     <input type="checkbox" checked="checked">
+                                     <span class="checkmark-sm bg-purple"></span>
+                                 </label>
 
-                            </li>     
-                            <li class="check-list">
-                                <label class="check-sm">
-                                    <span class="text-sm c-grey70">30 years</span>
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark-sm bg-brightblue"></span>
-                                </label>
+                             </li>
+                             <li class="check-list">
+                                 <label class="check-sm">
+                                     <span class="text-sm c-grey70">30 years</span>
+                                     <input type="checkbox" checked="checked">
+                                     <span class="checkmark-sm bg-brightblue"></span>
+                                 </label>
 
-                            </li> 
-                            <li class="check-list">
-                                <label class="check-sm">
-                                    <span class="text-sm c-grey70">5/1</span>
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark-sm bg-pink"></span>
-                                </label>
+                             </li>
+                             <li class="check-list">
+                                 <label class="check-sm">
+                                     <span class="text-sm c-grey70">5/1</span>
+                                     <input type="checkbox" checked="checked">
+                                     <span class="checkmark-sm bg-pink"></span>
+                                 </label>
 
-                            </li>
+                             </li>
                          </ul>
                          <ul class="">
                              <li>
@@ -714,34 +729,35 @@
 
 
                          <p class="text-sm c-grey40">
-                            Max per month
+                             Max per month
 
                          </p>
                          <div class="range-wrapper fx fx-sb fx-vc fx-w">
-                            
+
                              <div class="slider fx fx-sb fx-vc fx-w">
                                  <input type="range" min="1000" max="3200" value="3200">
 
                              </div>
                              <div class="value">
-                                 <span class="text-md c-grey40"> 
-                                   3200
+                                 <span class="text-md c-grey40">
+                                     3200
 
                                  </span>
                              </div>
 
                          </div>
 
-                    </div>
+                     </div>
                  </div>
 
              </div>
 
          </section>
-         
 
 
- 
+         <!-- footer  -->
+
+
          <footer class="footer">
              <div class="container">
                  <div class="wrapper fx fx-sb fx-w">
@@ -777,7 +793,7 @@
                      </ul>
                      <ul class="text-tsm c-grey20">
                          <li class="mgbt-24">
-                            COMPANY
+                             COMPANY
                          </li>
                          <li>
                              <a href="javascript:void(0)" class="text-tsm c-grey40">Resources</a>
@@ -791,7 +807,7 @@
                      <ul class="text-tsm c-grey20">
                          <li class="mgbt-24">LEGAL
 
-                     </li>
+                         </li>
                          <li>
                              <a href="javascript:void(0)" class="text-tsm c-grey40">NMLS Consumer Access
                              </a>
@@ -837,6 +853,3 @@
  </body>
 
  </html>
-
-
- 

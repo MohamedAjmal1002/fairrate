@@ -1,7 +1,6 @@
 .app-wrapper {
     padding: 14% 0 8% 0;
     font-size: 0;
-    display: none;
 
     .app-content {
         width:35%;
@@ -50,6 +49,10 @@
             &:focus{
                 border-color: $primary-color;
                 box-shadow: 0 0 0 1px $primary-color;
+            }
+            &:invalid{
+                border-color: $color-orange;
+                box-shadow: 0 0 0 1px $color-orange;
             }
         }
 

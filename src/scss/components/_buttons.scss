@@ -4,6 +4,10 @@
     border: none;
     cursor: pointer;
     text-transform: uppercase;
+    &:disabled{
+        background-color: $color-grey10;
+        cursor: not-allowed;
+    }
     // border-radius: 30px; 
     // transition:background-color 1s linear;
     // &:hover{

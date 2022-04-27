@@ -1,4 +1,3 @@
-const arrow = document.querySelector('.arrow-down');
 const dropdown = document.querySelectorAll('.dropdown');
 let photohead = document.querySelector('.photo');
 let proofhead = document.querySelector('.proof');
@@ -11,7 +10,6 @@ let uploadhead = document.querySelector('.upload-head');
 
 dropdown.forEach((dropElement) => {
     dropElement.addEventListener('click', () =>{
-        arrow.classList.toggle("active") 
         dropElement.closest('.dropdown-wrapper').classList.toggle('dropdown-open')
     })
 });
@@ -36,48 +34,35 @@ slider.oninput = function(){
     value.textContent = this.value; 
 }
 
-//button nav
+//page nav
 
 
-// let slideIndex = 1;
-// showDivs(slideIndex);
+const content = document.querySelectorAll('.content');  
+const buttons = document.querySelectorAll('.gotoNextPage'); //return all buttons
 
-// function plusDivs(n) {
-//   showDivs(slideIndex += n);
-// }
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const currentPage = document.querySelector('.content.active');
+        const gotopageNumber = button.getAttribute('gotopageNumber');
+        currentPage.classList.remove('active');
+        content[gotopageNumber].classList.add('active');
 
-// function showDivs(n) {
-//   let i;
-//   let x = document.getElementsByClassName("content");
-//   if (n > x.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = x.length}
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "block";  
-//   }
-//   x[slideIndex-1].style.display = "block";  
-// }
+    });
 
-// let currentTab=1;
-// $.("content1").style.display = "";
-// // document.on('click', 'nav.multiTabs>a',
-// // function(){
-// // let TabId = this.attr('data-trigger');
-// // $('div#'+TabId+' ').style.display = "";
-// // console.log("current Tab: "+TabId");
-// // currentTab = parseInt (TabId.replace("content", ""));
+})
 
-// $('.tabcontent:not(#'+TabId+')').style.display = "none"
-// });
 
-// function next(){
-// if (currentTab < 5){
-// $ (".tabcontent").style.display = "none";
-// $ (".#content"+(currentTab+1)).style.display = "";
-// currentTab++;
-// }
-// function prev(){
-// if (currentTab > 5){
-// $ (".tabcontent").style.display = "none";
-// $ (".#content"+(currentTab+1)).style.display = "";
-// currentTab++;
-// }
+//button dis and enable
+
+let input = document.querySelector(".input");
+let button = document.querySelector(".btn");
+button.disabled = true;
+input.addEventListener("change", stateHandle);
+
+function stateHandle() {
+    if(document.querySelector(".input").value === "") {
+        button.disabled = true;
+    } else {
+        button.disabled = false;
+    }
+}

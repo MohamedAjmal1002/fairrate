@@ -13,6 +13,7 @@ input {
     position: relative;
     margin-bottom: 12px;
     padding: 12px 0 12px 52px;
+    border: 1px solid $color-grey10;
     border-radius: 3px;
     background-color: $color-white;
     display: inline-block;
@@ -23,9 +24,7 @@ input {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    .check-br{
-        border: 1px solid $color-grey10;
-    }
+    
 
    
 }
@@ -81,7 +80,7 @@ input[type="checkbox"] {
 .check-sm{
     @extend .check;
     margin-bottom: 0;
-
+    border: none;
 }
 .checkmark-sm{      
     position: absolute;

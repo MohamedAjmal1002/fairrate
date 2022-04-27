@@ -37,6 +37,14 @@
         outline: none;
         background-color:$color-grey10;
         border-radius: 30px;
+        appearance: none;
+        &::-webkit-slider-container{
+            border-radius: 30px;
+            appearance: none;
+            color: oldlace;
+            background-color: cadetblue;
+
+        }
         &::-webkit-slider-thumb{
             height: 17px;
             width: 17px;

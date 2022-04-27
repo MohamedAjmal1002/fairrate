@@ -88,3 +88,30 @@
         transform: rotate(225deg);
     }
 }
+.arrow{
+    box-shadow: 0 0 2px 2px #c4cdd5;
+    color:#fff;
+  }
+  
+  /*top arrow*/
+  
+  .arrow-top{
+    &::before{
+        position: absolute;
+        top: -10px;
+        left:50%;
+        content:"";
+        display:block;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid white; 
+    }
+    &::after{
+        position: absolute;
+        top: -11px;
+        border: #c4cdd5;
+    }
+
+  }
+  
+  

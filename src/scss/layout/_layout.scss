@@ -21,6 +21,9 @@ body{
 section{
     background-color: $color-white30;
 }
-// .content{
-//     display: none;
-// }
+.content{
+    display: none;
+    &.active{
+        display: block;
+    }
+}
