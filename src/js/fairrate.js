@@ -26,7 +26,7 @@ proofhead.addEventListener('click', () => {
 //slider
 
 
-const slider = document.querySelector('input');
+const slider = document.querySelector('.range-wrapper input');
 const value = document.querySelector('.value');
 
 value.textContent = slider.value;
