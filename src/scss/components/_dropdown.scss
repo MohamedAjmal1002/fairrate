@@ -14,6 +14,9 @@
 .dropdown-wrapper{
     cursor: pointer;
     position: relative;
+    .dd-a{
+        display: inline-block;
+    }
     .downarrow{
         height: 14px;
         width: 10px;
@@ -21,6 +24,7 @@
         vertical-align: middle;
         fill: $color-grey60;
         vertical-align: middle;
+        margin-left: 8px;
     }
     .text-sm{
         vertical-align: middle;

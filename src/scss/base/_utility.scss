@@ -1,29 +1,36 @@
 .fx{
-    display: flex;
+    
     &-dc{
+        display: flex;
         flex-direction: column;
     }
 
     &-vc{
+        display: flex;
         align-items: center;
     }
 
     &-bc{
+        display: flex;
         justify-content: center;
         align-items: center;
     }
 
     &-sb{
+        display: flex;
         justify-content: space-between;
        
     }
     &-sa{
+        display: flex;
         justify-content: space-around;
     }
     &-w{
+        display: flex;
         flex-wrap: wrap;
     }
     &-c{
+        display: flex;
         justify-content:center;
     }
 }
@@ -147,6 +154,10 @@
 }
 .pdlt-40{
     padding-left: 40px;
+}
+
+.text-left{
+    text-align: left;
 }
 
 .bg-primary{

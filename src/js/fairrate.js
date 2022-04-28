@@ -26,13 +26,13 @@ proofhead.addEventListener('click', () => {
 //slider
 
 
-const slider = document.querySelector('.range-wrapper input');
-const value = document.querySelector('.value');
+// const slider = document.querySelectorAll('.range-wrapper input');
+// const value = document.querySelectorAll('.value');
 
-value.textContent = slider.value;
-slider.oninput = function(){
-    value.textContent = this.value; 
-}
+// value.textContent = slider.value;
+// slider.oninput = function(){
+//     value.textContent = "$"+this.value; 
+// }
 
 //page nav
 
@@ -66,3 +66,33 @@ function stateHandle() {
         button.disabled = false;
     }
 }
+
+// let inputs = document.querySelectorAll('input');
+// let buttonSend = document.getElementById('NextBtn');
+
+// let inputValidator = {
+//   "username": false,
+//   "email": false,
+//   "password": false
+// }
+
+// inputs.forEach((input) => {
+//   input.addEventListener('input', () => {
+//     let name = event.target.getAttribute('name');
+//     if (event.target.value.length > 0) {
+//       inputValidator[name] = true;
+//     } else {
+//       inputValidator[name] = false;
+//     };
+
+//     let allTrue = Object.keys(inputValidator).every((item) => {
+//       return inputValidator[item] === true
+//     });
+
+//     if (allTrue) {
+//       buttonSend.disabled = false;
+//     } else {
+//       buttonSend.disabled = true;
+//     }
+//   })
+// })

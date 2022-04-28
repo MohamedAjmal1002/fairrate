@@ -42,7 +42,7 @@
             border-radius: 30px;
             appearance: none;
             color: oldlace;
-            background-color: cadetblue;
+            background-color: $primary-color;
 
         }
         &::-webkit-slider-thumb{
@@ -55,7 +55,7 @@
             border-radius: 50%;
         }
         &::-moz-range-progress{
-            background-color: $color-green;
+            background-color: $primary-color;
             height: 4px;
             border-radius: 30px;
 

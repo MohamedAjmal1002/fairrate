@@ -116,7 +116,7 @@ table {
 }
 .text-tsm {
   font-size: 12px;
-  line-height: 17px;
+  line-height: 16px;
 }
 
 .link {
@@ -124,29 +124,33 @@ table {
   text-decoration: underline;
 }
 
-.fx {
-  display: flex;
-}
 .fx-dc {
+  display: flex;
   flex-direction: column;
 }
 .fx-vc {
+  display: flex;
   align-items: center;
 }
 .fx-bc {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 .fx-sb {
+  display: flex;
   justify-content: space-between;
 }
 .fx-sa {
+  display: flex;
   justify-content: space-around;
 }
 .fx-w {
+  display: flex;
   flex-wrap: wrap;
 }
 .fx-c {
+  display: flex;
   justify-content: center;
 }
 
@@ -270,6 +274,10 @@ table {
   padding-left: 40px;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .bg-primary {
   background-color: #4ad5f6;
 }
@@ -343,10 +351,6 @@ table {
 .btn-lg {
   padding: 20px 30px;
   background-color: #4ad5f6;
-}
-.btn-dis {
-  background-color: #c4cdd5;
-  cursor: not-allowed;
 }
 
 input::placeholder {
@@ -466,6 +470,9 @@ input[type=checkbox] {
   cursor: pointer;
   position: relative;
 }
+.dropdown-wrapper .dd-a {
+  display: inline-block;
+}
 .dropdown-wrapper .downarrow {
   height: 14px;
   width: 10px;
@@ -473,6 +480,7 @@ input[type=checkbox] {
   vertical-align: middle;
   fill: #212b36;
   vertical-align: middle;
+  margin-left: 8px;
 }
 .dropdown-wrapper .text-sm {
   vertical-align: middle;
@@ -568,7 +576,7 @@ input[type=checkbox] {
   border-radius: 30px;
   appearance: none;
   color: oldlace;
-  background-color: cadetblue;
+  background-color: #4ad5f6;
 }
 .slider input::-webkit-slider-thumb {
   height: 17px;
@@ -580,7 +588,7 @@ input[type=checkbox] {
   border-radius: 50%;
 }
 .slider input::-moz-range-progress {
-  background-color: #00cfc0;
+  background-color: #4ad5f6;
   height: 4px;
   border-radius: 30px;
 }
@@ -630,6 +638,27 @@ section {
   box-shadow: 0 1px 0 0 #919eab;
   background-color: #ffffff;
 }
+.header .favicon {
+  height: 24px;
+  width: 24px;
+  fill: #919eab;
+  margin-right: 36px;
+}
+.header .bell-icon {
+  margin-right: 24px;
+}
+.header .bell {
+  height: 21px;
+  width: 24px;
+  fill: #919eab;
+  vertical-align: middle;
+}
+.header .avator {
+  height: 36px;
+  width: 36px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
 .header .logo {
   display: inline-block;
 }
@@ -637,31 +666,14 @@ section {
   height: 39px;
   width: 186px;
   display: block;
+  font-size: 18px;
+  color: #454f5b;
 }
 .header .nav-bar .nav-menu {
   margin-right: 40px;
 }
 .header .nav-bar .nav-menu:hover {
   color: #212b36;
-}
-.header .favicon {
-  height: 24px;
-  width: 24px;
-  fill: #919eab;
-  margin-right: 36px;
-}
-.header .bell {
-  height: 21px;
-  width: 24px;
-  fill: #919eab;
-  vertical-align: middle;
-  margin-right: 24px;
-}
-.header .avator {
-  height: 36px;
-  width: 36px;
-  margin-right: 12px;
-  vertical-align: middle;
 }
 
 .content-1 {
@@ -980,49 +992,49 @@ section {
   padding: 4px 12px;
   border: 1px solid #919eab;
   border-radius: 3px;
+  margin-left: 24px;
 }
 
 .footer {
   padding: 48px 0 86px 0;
   background-color: #f4f6f8;
 }
-.footer .wrapper {
+.footer .social-media-icon {
+  height: 33px;
+  width: 33px;
+  display: block;
+}
+.footer .social-media {
+  margin-right: 20px;
+}
+.footer .footer-wrapper {
   margin-bottom: 54px;
 }
-.footer .wrapper ul {
+.footer .footer-wrapper ul {
   width: 25%;
 }
-.footer .wrapper ul:nth-child(2) {
+.footer .footer-wrapper ul:nth-child(2) {
   width: 20%;
 }
-.footer .wrapper ul:nth-child(4) {
+.footer .footer-wrapper ul:nth-child(4) {
   width: 30%;
 }
-.footer .wrapper ul li {
-  margin-bottom: 12px;
-}
-.footer .wrapper ul li a {
+.footer .footer-wrapper ul a {
   display: inline-block;
 }
-.footer .wrapper ul li .text-tsm {
-  line-height: 28px;
-}
-.footer .wrapper ul li .phonecall {
+.footer .footer-wrapper ul .phone {
   height: 14px;
   width: 14px;
   fill: #919eab;
 }
-.footer .wrapper ul li .social-media {
-  height: 33px;
-  width: 33px;
-  margin-right: 20px;
-  display: block;
-}
-.footer .wrapper ul .logo {
+.footer .footer-wrapper ul .logo {
   display: inline-block;
 }
-.footer .wrapper ul .logo img {
+.footer .footer-wrapper ul .logo img {
   height: 39px;
   width: 186px;
   display: block;
+}
+.footer .footer-wrapper .footer-text {
+  line-height: 28px;
 }
