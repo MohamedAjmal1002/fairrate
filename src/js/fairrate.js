@@ -42,7 +42,7 @@ buttons.forEach((button) => {
 
 })
 
-//check inputs
+//valid inputs
 
 
 function checkAllInputValid(activePage, valid) {

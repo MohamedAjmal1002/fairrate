@@ -689,64 +689,61 @@ section {
   font-size: 0;
   margin: 0 20px;
 }
-.content-1 .input-wrapper .input-field {
+.content-1 .input-wrapper .button {
+  text-align: center;
+}
+
+.input-field {
   padding: 12px 16px;
   margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border: 1px solid #c4cdd5;
   border-radius: 3px;
   outline: 0;
   display: block;
   width: 100%;
 }
-.content-1 .input-wrapper .input-field::placeholder {
+.input-field::placeholder {
   color: #adadad;
   font-size: 14px;
 }
-.content-1 .input-wrapper .input-field:first-child {
+.input-field:first-child {
   margin-left: 0;
 }
-.content-1 .input-wrapper .input-field:focus {
+.input-field:focus {
   border-color: #4ad5f6;
   box-shadow: 0 0 0 1px #4ad5f6;
 }
-.content-1 .input-wrapper .input-field:hover {
+.input-field:hover {
   border-color: #9c6ade;
   box-shadow: 0 0 0 1px #9c6ade;
-}
-.content-1 .input-wrapper .input-field.success {
-  border-color: #00cfc0;
-  box-shadow: 0 0 0 1px #00cfc0;
-}
-.content-1 .input-wrapper .button {
-  text-align: center;
 }
 
 .form-control {
   display: inline-block;
   width: 238px;
+  position: relative;
 }
 .form-control:first-child {
   margin-right: 20px;
 }
-.form-control .err-msg {
+
+.err-msg {
   color: #FF0000;
-  position: relative;
-  bottom: 18px;
-  left: -75px;
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
   visibility: hidden;
 }
 
 .error {
-  border-color: #FF0000;
+  border: 1px solid #FF0000;
   box-shadow: 0 0 0 1px #FF0000;
-  border-radius: 3px;
 }
 
 .success {
-  border-color: #00FF00;
+  border: 1px solid #00FF00;
   box-shadow: 0 0 0 1px #00FF00;
-  border-radius: 3px;
 }
 
 .app-wrapper {
@@ -760,7 +757,6 @@ section {
 }
 .app-wrapper .app-content .text-tsm {
   text-transform: uppercase;
-  margin-bottom: 8px;
 }
 .app-wrapper .app-content .heading-lg,
 .app-wrapper .app-content .text-md {
@@ -777,29 +773,6 @@ section {
   left: 10px;
   bottom: 5px;
   pointer-events: none;
-}
-.app-wrapper .input-container input {
-  width: 100%;
-  padding: 12px 52px;
-  outline: 0;
-  border: 1px solid #adadad;
-  border-radius: 3px;
-}
-.app-wrapper .input-container input:focus {
-  border-color: #4ad5f6;
-  box-shadow: 0 0 0 1px #4ad5f6;
-}
-.app-wrapper .input-container input:hover {
-  border-color: #9c6ade;
-  box-shadow: 0 0 0 1px #9c6ade;
-}
-.app-wrapper .input-container input.error {
-  border-color: #ff9f00;
-  box-shadow: 0 0 0 1px #ff9f00;
-}
-.app-wrapper .input-container input.success {
-  border-color: #00cfc0;
-  box-shadow: 0 0 0 1px #00cfc0;
 }
 .app-wrapper .input-container input[type=date]::-webkit-calendar-picker-indicator {
   background: transparent;
@@ -840,6 +813,25 @@ section {
 .app-wrapper .input-wrapper input::placeholder {
   font-size: 14px;
   color: #adadad;
+}
+.app-wrapper .err-msg {
+  bottom: -20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 52px;
+  outline: 0;
+  border: 1px solid #adadad;
+  border-radius: 3px;
+}
+input:focus {
+  border-color: #4ad5f6;
+  box-shadow: 0 0 0 1px #4ad5f6;
+}
+input:hover {
+  border-color: #9c6ade;
+  box-shadow: 0 0 0 1px #9c6ade;
 }
 
 .content-3 {

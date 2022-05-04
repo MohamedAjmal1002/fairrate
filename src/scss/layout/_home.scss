@@ -10,45 +10,7 @@
 
     .input-wrapper {
         font-size: 0;
-        margin: 0 20px;
-
-        .input-field {
-            padding: 12px 16px;
-            margin-left: 20px;
-            margin-bottom: 20px;
-            border: 1px solid $color-grey10;
-            border-radius: 3px;
-            outline: 0;
-            display: block;
-            width: 100%;
-
-            &::placeholder {
-                color: $color-grey;
-                font-size: 14px;
-            }
-
-            &:first-child {
-                margin-left: 0;
-            }
-
-            &:focus {
-                border-color: $primary-color;
-                box-shadow: 0 0 0 1px $primary-color;
-            }
-
-            &:hover {
-                border-color: $color-purple;
-                box-shadow: 0 0 0 1px $color-purple;
-            }
-
-            
-
-            &.success {
-                border-color: $color-green;
-                box-shadow: 0 0 0 1px $color-green;
-            }
-
-        }
+        margin: 0 20px;   
 
         .button {
             text-align: center;
@@ -56,29 +18,58 @@
     }
     
 }
+.input-field {
+    padding: 12px 16px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    border: 1px solid $color-grey10;
+    border-radius: 3px;
+    outline: 0;
+    display: block;
+    width: 100%;
+
+    &::placeholder {
+        color: $color-grey;
+        font-size: 14px;
+    }
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 0 1px $primary-color;
+    }
+
+    &:hover {
+        border-color: $color-purple;
+        box-shadow: 0 0 0 1px $color-purple;
+    }
+}
 .form-control {
     display: inline-block;
     width: 238px;
+    position: relative;
 
     &:first-child {
         margin-right: 20px;
     }
-
-    .err-msg {
-        color: $red;
-        position: relative;
-        bottom: 18px;
-        left: -75px;
-        visibility: hidden;
-    }
+}
+.err-msg {
+    color: $red;
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+    visibility: hidden;
 }
 .error {
-    border-color: $red;
+    border:1px solid $red;
     box-shadow: 0 0 0 1px $red;
-    border-radius: 3px;
+    
 }
 .success {
-    border-color: $green;
+    border:1px solid $green;
     box-shadow: 0 0 0 1px $green;
-    border-radius: 3px;
+    
 }
