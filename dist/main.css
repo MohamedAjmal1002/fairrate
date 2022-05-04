@@ -691,12 +691,13 @@ section {
 }
 .content-1 .input-wrapper .input-field {
   padding: 12px 16px;
-  width: calc(50% - 20px);
   margin-left: 20px;
   margin-bottom: 20px;
   border: 1px solid #c4cdd5;
   border-radius: 3px;
   outline: 0;
+  display: block;
+  width: 100%;
 }
 .content-1 .input-wrapper .input-field::placeholder {
   color: #adadad;
@@ -709,12 +710,43 @@ section {
   border-color: #4ad5f6;
   box-shadow: 0 0 0 1px #4ad5f6;
 }
-.content-1 .input-wrapper .input-field:invalid {
-  border-color: #ff9f00;
-  box-shadow: 0 0 0 1px #ff9f00;
+.content-1 .input-wrapper .input-field:hover {
+  border-color: #9c6ade;
+  box-shadow: 0 0 0 1px #9c6ade;
+}
+.content-1 .input-wrapper .input-field.success {
+  border-color: #00cfc0;
+  box-shadow: 0 0 0 1px #00cfc0;
 }
 .content-1 .input-wrapper .button {
   text-align: center;
+}
+
+.form-control {
+  display: inline-block;
+  width: 238px;
+}
+.form-control:first-child {
+  margin-right: 20px;
+}
+.form-control .err-msg {
+  color: #FF0000;
+  position: relative;
+  bottom: 18px;
+  left: -75px;
+  visibility: hidden;
+}
+
+.error {
+  border-color: #FF0000;
+  box-shadow: 0 0 0 1px #FF0000;
+  border-radius: 3px;
+}
+
+.success {
+  border-color: #00FF00;
+  box-shadow: 0 0 0 1px #00FF00;
+  border-radius: 3px;
 }
 
 .app-wrapper {
@@ -757,9 +789,17 @@ section {
   border-color: #4ad5f6;
   box-shadow: 0 0 0 1px #4ad5f6;
 }
-.app-wrapper .input-container input:invalid {
+.app-wrapper .input-container input:hover {
+  border-color: #9c6ade;
+  box-shadow: 0 0 0 1px #9c6ade;
+}
+.app-wrapper .input-container input.error {
   border-color: #ff9f00;
   box-shadow: 0 0 0 1px #ff9f00;
+}
+.app-wrapper .input-container input.success {
+  border-color: #00cfc0;
+  box-shadow: 0 0 0 1px #00cfc0;
 }
 .app-wrapper .input-container input[type=date]::-webkit-calendar-picker-indicator {
   background: transparent;

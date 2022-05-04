@@ -1,40 +1,84 @@
-.content-1{
-   text-align: center;
-   max-width: 536px;
-   padding: 15% 0 30% 0;
-   margin: auto;
-   .heading-lg{
-       margin-bottom: 50px;
-   }
-   .input-wrapper{
-       font-size: 0;
-       margin: 0 20px;
-       .input-field{
-        padding: 12px 16px;
-        width: calc(50% - 20px);
-        margin-left: 20px;
-        margin-bottom: 20px;
-        border: 1px solid $color-grey10;
-        border-radius: 3px;
-        outline: 0;
-        &::placeholder{
-            color: $color-grey;
-            font-size: 14px;
+.content-1 {
+    text-align: center;
+    max-width: 536px;
+    padding: 15% 0 30% 0;
+    margin: auto;
+
+    .heading-lg {
+        margin-bottom: 50px;
+    }
+
+    .input-wrapper {
+        font-size: 0;
+        margin: 0 20px;
+
+        .input-field {
+            padding: 12px 16px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            border: 1px solid $color-grey10;
+            border-radius: 3px;
+            outline: 0;
+            display: block;
+            width: 100%;
+
+            &::placeholder {
+                color: $color-grey;
+                font-size: 14px;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:focus {
+                border-color: $primary-color;
+                box-shadow: 0 0 0 1px $primary-color;
+            }
+
+            &:hover {
+                border-color: $color-purple;
+                box-shadow: 0 0 0 1px $color-purple;
+            }
+
+            
+
+            &.success {
+                border-color: $color-green;
+                box-shadow: 0 0 0 1px $color-green;
+            }
+
         }
-        &:first-child{
-            margin-left: 0;
-        }
-        &:focus{
-            border-color: $primary-color;
-            box-shadow: 0 0 0 1px $primary-color;
-        }
-        &:invalid{
-            border-color: $color-orange;
-            box-shadow: 0 0 0 1px $color-orange;
+
+        .button {
+            text-align: center;
         }
     }
-    .button{
-        text-align:center;
+    
+}
+.form-control {
+    display: inline-block;
+    width: 238px;
+
+    &:first-child {
+        margin-right: 20px;
     }
-   }
+
+    .err-msg {
+        color: $red;
+        position: relative;
+        bottom: 18px;
+        left: -75px;
+        visibility: hidden;
+    }
+}
+.error {
+    border-color: $red;
+    box-shadow: 0 0 0 1px $red;
+    border-radius: 3px;
+}
+.success {
+    border-color: $green;
+    box-shadow: 0 0 0 1px $green;
+    border-radius: 3px;
 }

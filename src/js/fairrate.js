@@ -23,76 +23,67 @@ proofhead.addEventListener('click', () => {
     uploadhead.innerHTML = 'Upload Proof of Address'
 });
 
-//slider
-
-
-// const slider = document.querySelectorAll('.range-wrapper input');
-// const value = document.querySelectorAll('.value');
-
-// value.textContent = slider.value;
-// slider.oninput = function(){
-//     value.textContent = "$"+this.value; 
-// }
-
 //page nav
 
 
 const content = document.querySelectorAll('.content');  
-const buttons = document.querySelectorAll('.gotoNextPage'); //return all buttons
-
+const buttons = document.querySelectorAll('.gotoNextPage'); 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
+        let valid = false;
         const currentPage = document.querySelector('.content.active');
         const gotopageNumber = button.getAttribute('gotopageNumber');
-        currentPage.classList.remove('active');
-        content[gotopageNumber].classList.add('active');
-
+        const isValid = checkAllInputValid('.content.active', valid);
+        if(isValid) {
+            currentPage.classList.remove('active');
+            content[gotopageNumber].classList.add('active');
+        }
     });
 
 })
 
+//check inputs
 
-//button dis and enable
 
-let input = document.querySelector(".input");
-let button = document.querySelector(".btn");
-button.disabled = true;
-input.addEventListener("change", stateHandle);
+function checkAllInputValid(activePage, valid) {
+    const pageInputs = document.querySelectorAll(activePage + ' ' + '.mandatory');
+    const pageInputsArrary = Array.from(pageInputs);
+    pageInputsArrary.map((pageInput) =>{
+        checkInput(pageInput)
+    });
 
-function stateHandle() {
-    if(document.querySelector(".input").value === "") {
-        button.disabled = true;
+    const errorField = document.querySelector(activePage + ' ' + '.error');
+    if(errorField) {
+        valid = false;
     } else {
-        button.disabled = false;
+        valid = true
+    }
+    return valid;
+}
+
+function checkInput(input){
+    if(input.value.trim() === ''){
+        onError(input);
+
+    } else {
+        onSuccess(input);
     }
 }
 
-// let inputs = document.querySelectorAll('input');
-// let buttonSend = document.getElementById('NextBtn');
 
-// let inputValidator = {
-//   "username": false,
-//   "email": false,
-//   "password": false
-// }
 
-// inputs.forEach((input) => {
-//   input.addEventListener('input', () => {
-//     let name = event.target.getAttribute('name');
-//     if (event.target.value.length > 0) {
-//       inputValidator[name] = true;
-//     } else {
-//       inputValidator[name] = false;
-//     };
-
-//     let allTrue = Object.keys(inputValidator).every((item) => {
-//       return inputValidator[item] === true
-//     });
-
-//     if (allTrue) {
-//       buttonSend.disabled = false;
-//     } else {
-//       buttonSend.disabled = true;
-//     }
-//   })
-// })
+function onSuccess (input){
+    let parent = input.parentElement;
+    let msgElm = parent.querySelector('small');
+    msgElm.style.visibility='hidden';  
+    input.classList.add("success");  
+    input.classList.remove("error");  
+}
+function onError (input){
+    let parent = input.parentElement;
+    let msgElm = parent.querySelector('small');
+    msgElm.style.visibility='visible';  
+    msgElm.innerHTML='*required'; 
+    input.classList.add("error");  
+    input.classList.remove("success");  
+}

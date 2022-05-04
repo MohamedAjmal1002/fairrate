@@ -22,10 +22,6 @@
              <nav class="nav-bar  fx-w fx-vc">
                  <a href="javascript:void(0)" class="nav-menu text-lg c-grey20">Home</a>
                  <a href="javascript:void(0)" class="nav-menu text-lg c-grey20">Application</a>
-                 <!-- <button class="nav-menu text-lg c-grey20 btn gotoNextPage" gotopageNumber="1">
-                    Application
-
-                 </button> -->
                  <a href="javascript:void(0)" class="nav-menu text-lg c-grey20">Documents</a>
                  <a href="javascript:void(0)" class="bell-icon">
                      <svg class="bell">
@@ -62,15 +58,25 @@
                  <h1 class="heading-lg c-grey60 w-sbold">
                      I'll get you an awesome price in seconds. Ready to go?
                  </h1>
-                 <div class="input-wrapper">
-                     <input type="text" placeholder="First name" class="input-field input">
-                     <input type="text" placeholder="Last name" class="input-field input">
-                 </div>
-                 <div class="button">
-                     <button class="btn btn-md text-md gotoNextPage" gotopageNumber="1" id="NextBtn"> next
+                 <div class="input-wrapper" id="inputwrapper">
+                     <div class="form-control">
+                        <input type="text" placeholder="First name" class="input-field input mandatory" id="firstname"> 
+                        <small class="text-tsm err-msg">Error Message</small>  
 
-                     </button>
+                     </div>                
+                     <div class="form-control">
+                        <input type="text" placeholder="Last name" class="input-field input mandatory" id="lastname"> 
+                        <small class="text-tsm err-msg">Error Message</small>    
+
+                     </div>
+                     <div class="button">
+                        <button class="btn btn-md text-md gotoNextPage" gotopageNumber="1" id="NextBtn"> next
+   
+                        </button>
+                    </div>
+                     
                  </div>
+                
              </div>
          </section>
 
@@ -143,7 +149,7 @@
                                  </li>
                              </ul>
                              <div class="dropdown-wrapper dd-container">
-                                 <div class="dropdown fx fx-sb fx-vc">
+                                 <div class="dropdown fx-sb fx-vc">
                                      <span class="text-sm c-grey40">
                                          I don’t know
                                      </span>
@@ -871,3 +877,7 @@
  </body>
 
  </html>
+
+
+
+                
