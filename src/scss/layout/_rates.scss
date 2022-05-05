@@ -19,16 +19,16 @@
         margin-left: 8px;
 
     }
-    li{
-        width: 20%;
+    .rate-head{
+       width: 20%;
         &:nth-child(2){
-            width: 15%;
+            width: calc(15% - 10px);
         }
         &:nth-child(3){
-            width: 15%;
+            width: calc(15% - 10px);
         }
         &:last-child{
-            width: 10%;
+            width: calc(10% - 10px);
         }
     }
 }
