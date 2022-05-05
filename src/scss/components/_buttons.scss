@@ -3,18 +3,24 @@
     color:$color-white;
     border: none;
     cursor: pointer;
-    text-transform: uppercase;
     &:disabled{
         background-color: $color-grey10;
         cursor: not-allowed;
     }
+    &-tsm{
+        padding: 10px 20px;
+        background-color: $aqua-marine;
+        border-radius: 2px;
+    }
     &-sm{
-        padding: 12px 24px;
-        // background-color: $secondary-color;
+        padding: 10px 28px;
+        background-color:$color-grey70;
+        text-transform: uppercase;
     }
     &-md{
         padding: 15px 70px;
         background-color: $primary-color;
+        text-transform: uppercase;
     }
     &-lg{
         padding: 20px 30px;
