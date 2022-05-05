@@ -77,7 +77,7 @@ function checkAllInputValid(activePage, valid) {
 }
 
 function checkInput(input){
-    if(input.value.trim() === ''){
+    if(input.value === ''){
         onError(input);
 
     } else {

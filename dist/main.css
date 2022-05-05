@@ -757,6 +757,7 @@ section {
 }
 .app-wrapper .app-content .date {
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .app-wrapper .app-content .heading-lg,
 .app-wrapper .app-content .text-md {
@@ -943,64 +944,64 @@ input:hover {
   padding: 14% 0 8% 0;
   text-align: center;
 }
-.content-5 .result {
+.content-5 .result-2 {
   background-color: #ffffff;
   padding: 16px 16px 0;
   border-radius: 3px;
   width: calc(65% - 24px);
 }
-.content-5 .result .rate-list-wrapper {
+.content-5 .result-2 .rate-list-wrapper {
   width: 100%;
   padding: 20px 0;
   border-bottom: 2px solid #dfe3e8;
 }
-.content-5 .result .rate-list-wrapper:first-child {
+.content-5 .result-2 .rate-list-wrapper:first-child {
   padding-top: 0;
 }
-.content-5 .result .rate-list-wrapper .rate-lists {
+.content-5 .result-2 .rate-list-wrapper .rate-lists {
   width: 25%;
   text-align: left;
 }
-.content-5 .result .rate-list-wrapper .rate-lists:nth-child(3) {
+.content-5 .result-2 .rate-list-wrapper .rate-lists:nth-child(3) {
   text-align: center;
 }
-.content-5 .result .rate-list-wrapper .rate-lists:last-child {
+.content-5 .result-2 .rate-list-wrapper .rate-lists:last-child {
   text-align: right;
 }
-.content-5 .result .rate-fees-head {
+.content-5 .result-2 .rate-fees-head {
   width: 100%;
 }
-.content-5 .result .rate-fees-head .question {
+.content-5 .result-2 .rate-fees-head .question {
   width: 24px;
   height: 24px;
   fill: #4ad5f6;
   vertical-align: middle;
   margin-right: 12px;
 }
-.content-5 .result .rate-fees-head .rate-fees {
+.content-5 .result-2 .rate-fees-head .rate-fees {
   padding: 24px 0;
   border-bottom: 2px solid #dfe3e8;
 }
-.content-5 .result .pills {
+.content-5 .result-2 .pills {
   border-radius: 20px;
   padding: 6px;
   margin-right: 4px;
 }
-.content-5 .result progress {
+.content-5 .result-2 progress {
   height: 4px;
   width: 64px;
   margin-left: 6px;
   vertical-align: middle;
   appearance: none;
 }
-.content-5 .result progress::-webkit-progress-value {
+.content-5 .result-2 progress::-webkit-progress-value {
   border-radius: 30px;
 }
-.content-5 .result progress::-webkit-progress-bar {
+.content-5 .result-2 progress::-webkit-progress-bar {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 30px;
 }
-.content-5 .result progress i {
+.content-5 .result-2 progress i {
   display: inline-block;
 }
 .content-5 .range {
