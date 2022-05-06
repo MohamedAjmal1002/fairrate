@@ -22,9 +22,9 @@ section{
     background-color: $color-white30;
 }
 
-// .content{
-//     display: none;
-//     &.active{
-//         display: block;
-//     }
-// }
+.content{
+    display: none;
+    &.active{
+        display: block;
+    }
+}

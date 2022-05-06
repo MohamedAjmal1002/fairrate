@@ -616,6 +616,13 @@ section {
   background-color: #f9fafb;
 }
 
+.content {
+  display: none;
+}
+.content.active {
+  display: block;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -964,12 +971,16 @@ input:hover {
 .rates .rate-list-container {
   background-color: #ffffff;
   padding: 0 20px;
+  box-shadow: 0 6px 8px 0 #dfe3e8;
 }
 .rates .rate-list-container .rate-list-wrapper {
   width: 100%;
   background-color: #ffffff;
-  padding: 25px 12px 10px 22px;
+  padding: 24px 12px 10px 22px;
   border-bottom: 1px solid #dfe3e8;
+}
+.rates .rate-list-container .rate-list-wrapper:last-child {
+  padding-bottom: 24px;
 }
 .rates .rate-list-container .rate-list-wrapper .rate-list {
   width: 16%;
@@ -984,6 +995,10 @@ input:hover {
 .rates .rate-list-container .rate-list-wrapper .rate-list:nth-child(6n) {
   width: 10%;
 }
+.rates .rate-list-container .rate-img-wrapper {
+  width: 152px;
+  height: 92px;
+}
 .rates .rate-list-container .loan-img {
   width: 110px;
   height: 42px;
@@ -991,6 +1006,44 @@ input:hover {
 .rates .rate-list-container .merix-img {
   width: 116px;
   height: 79px;
+}
+.rates .rate-list-container .cmls-img {
+  width: 150px;
+  height: 50px;
+}
+.rates .rate-list-container .b2b-img {
+  width: 152px;
+  height: 59px;
+}
+.rates .rate-list-container .rmg-img {
+  width: 104px;
+  height: 71px;
+}
+.rates .rate-list-container .equitable-img {
+  width: 152px;
+  height: 52px;
+}
+.rates .rate-list-container .wealth-img {
+  width: 150px;
+  height: 37px;
+}
+.rates .rate-list-container .nboc-img {
+  width: 143px;
+  height: 58px;
+}
+.rates .rate-list-container .rate-btn {
+  padding: 8px 64px;
+  border: 1px solid #dfe3e8;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+.rates .rate-list-container .rate-btn:hover {
+  background-color: #dfe3e8;
+}
+.rates .rate-list-container .btnarrow {
+  width: 20px;
+  height: 20px;
+  fill: #637381;
 }
 
 .content-5 {
