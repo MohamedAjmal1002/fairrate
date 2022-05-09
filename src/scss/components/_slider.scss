@@ -1,20 +1,22 @@
-.slider{
-    .input{
+.slider {
+    .input {
         height: 4px;
         width: 183px;
         -webkit-appearance: none;
         outline: none;
-        background-color:$color-grey10;
+        background-color: $color-grey10;
         border-radius: 30px;
         appearance: none;
-        &::-webkit-slider-container{
+
+        &::-webkit-slider-container {
             border-radius: 30px;
             appearance: none;
             color: oldlace;
             background-color: $primary-color;
 
         }
-        &::-webkit-slider-thumb{
+
+        &::-webkit-slider-thumb {
             height: 17px;
             width: 17px;
             cursor: pointer;
@@ -23,18 +25,40 @@
             background-color: $color-white;
             border-radius: 50%;
         }
-        &::-moz-range-progress{
+
+        &::-moz-range-progress {
             background-color: $primary-color;
             height: 4px;
             border-radius: 30px;
 
         }
     }
-    
-    
+
+
 }
 
+.progress-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #dbecf8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    &::before {
+        content: "";
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        background-color: $color-white;
+        border-radius: 50%;
+    }
 
-
-
+    .progress-value {
+        font-size: 40px;
+        line-height: 54px;
+        position: relative;
+    }
+}

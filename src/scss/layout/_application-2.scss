@@ -1,0 +1,49 @@
+.app-2{
+    padding: 8% 0 14% 0;
+
+    .app-2-head{
+        padding: 28px 0;
+    }
+    .details-wrapper{
+        padding-top: 100px;
+    }
+    .details{
+        padding: 24px 20px;
+        border: 2px solid $color-grey10;
+        border-radius: 3px;
+        width: 500px;
+        .number{
+            border: 2px solid $color-grey60;
+            border-radius: 50%;
+            padding: 4px 9px;
+            margin-right: 20px;
+            &-lyt{
+                border: 2px solid $color-grey10;
+            }
+        }
+        i,span{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .tick{
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            background-color:$drkgreen;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 11px;
+                top: 6px;
+                width: 8px;
+                height: 14px;
+                border: 1px solid white;
+                border-width: 0 4px 4px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        }
+    }
+}

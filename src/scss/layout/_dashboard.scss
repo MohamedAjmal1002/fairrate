@@ -1,0 +1,47 @@
+.dashboard {
+    padding: 15% 0 30% 0;
+}
+
+.db-card-wrapper {
+    .db-card {
+        padding: 28px 30px;
+        background-color: $color-white;
+        box-shadow: 0 1px 10px 0 $color-grey10;
+
+        &:nth-child(2) {
+            border: 2px dashed $color-paleblue;
+            box-shadow: none;
+            background-color: $color-white30;
+            max-width: 400px;
+        }
+    }
+
+    .db-card-text {
+        max-width: 263px;
+        margin-left: 28px;
+    }
+
+}
+
+.btn-container {
+    padding: 4px;
+    border-radius: 5px;
+    max-width: 223px;
+    cursor: pointer;
+
+    &-sm {
+        width: 170px;
+        border: 2px solid $color-grey10;
+    }
+}
+
+.btn-icon{
+    fill: $color-white;
+    width: 16px;
+    height: 18px;
+    margin:0 14px;
+    vertical-align: middle;
+    &-sm{
+        fill: $color-grey10;
+    }
+}

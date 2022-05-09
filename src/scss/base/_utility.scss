@@ -19,6 +19,7 @@
     &-sb{
         display: flex;
         justify-content: space-between;
+        align-items: center;
        
     }
     &-sa{
@@ -112,6 +113,9 @@
     &-orange{
         color:$color-orange;
     }
+    &-pastelred{
+        color:$color-pastelred;
+    }
 }
 .w{
     &-light{
@@ -155,6 +159,9 @@
 .mglt-8{
     margin-left: 8px;
 }
+.mglt-24{
+    margin-left:24px;
+}
 .mgrt-18{
     margin-right: 18px;
 }
@@ -187,6 +194,9 @@
 }
 .bg-pink{
     background-color: $color-pink;
+}
+.bg-paleblue{
+    background-color: $color-paleblue;
 }
 .bg-white40{
     background-color: $color-white40;

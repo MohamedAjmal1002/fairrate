@@ -102,3 +102,27 @@ function onError (input){
     input.classList.add("error");  
     input.classList.remove("success");  
 }
+
+
+// progress-circle
+
+
+// let ProgressBar = document.querySelector('.progress-circle');
+// let ValueContainer = document.querySelector('.progress-value');
+
+// let ProgressValue = 0;
+// let ProgressEndValue = 60;
+// let speed = 50;
+
+// let progress = setInterval (() =>{
+//     ProgressValue++;
+//     console.log(ProgressValue);
+//     ValueContainer.textContent = '${ProgressValue}%';
+//     ProgressBar.style.background = 'conic-gradient(
+//         #dbecf8 ${ProgressValue * 3.6}deg,
+//         $color-brightblue ${ProgressValue * 3.6}deg
+//     )';
+//     if (ProgressValue == ProgressEndValue){
+//         clearInterval(progress);
+//     }
+// })
