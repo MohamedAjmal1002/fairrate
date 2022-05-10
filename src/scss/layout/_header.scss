@@ -60,10 +60,8 @@
                 transform: scaleX(0);
                 transform-origin:left;
                 transition:transform .25s ease;
-            }
+            } 
 
-            
-    
             &:hover {
                 color: $color-grey60;
                 &::after{
