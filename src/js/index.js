@@ -42,17 +42,15 @@ proofhead.addEventListener('click', () => {
 
 
 const content = document.querySelectorAll('.content');  
-const buttons = document.querySelectorAll('.gotoNextPage'); 
+const buttons = document.querySelectorAll('.gotoPage'); 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
-        let valid = false;
-        const currentPage = document.querySelector('.content.active');
+        const currentPage = document.querySelector('.content.active');       
         const gotopageNumber = button.getAttribute('gotopageNumber');
-        const isValid = checkAllInputValid('.content.active', valid);
-        if(isValid) {
+        
             currentPage.classList.remove('active');
             content[gotopageNumber].classList.add('active');
-        }
+        
     });
 
 })
@@ -103,26 +101,21 @@ function onError (input){
     input.classList.remove("success");  
 }
 
+// remove disable
 
-// progress-circle
+let inputs = document.querySelectorAll('.mandatory');
+inputs.forEach((input) => {
+    input.addEventListener('blur',isEmpty);    
+    
+})
 
 
-// let ProgressBar = document.querySelector('.progress-circle');
-// let ValueContainer = document.querySelector('.progress-value');
+function isEmpty(){
+    let valid = false;
+        const isValid = checkAllInputValid('.content.active', valid);
+    if(isValid){
+        document.querySelector('.content.active .gotoNextPage').removeAttribute('disabled');
+    }
+}
 
-// let ProgressValue = 0;
-// let ProgressEndValue = 60;
-// let speed = 50;
 
-// let progress = setInterval (() =>{
-//     ProgressValue++;
-//     console.log(ProgressValue);
-//     ValueContainer.textContent = '${ProgressValue}%';
-//     ProgressBar.style.background = 'conic-gradient(
-//         #dbecf8 ${ProgressValue * 3.6}deg,
-//         $color-brightblue ${ProgressValue * 3.6}deg
-//     )';
-//     if (ProgressValue == ProgressEndValue){
-//         clearInterval(progress);
-//     }
-// })

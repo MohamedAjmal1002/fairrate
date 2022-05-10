@@ -607,7 +607,7 @@ input[type=checkbox] {
   position: relative;
   width: 120px;
   height: 120px;
-  background-color: #dbecf8;
+  background: conic-gradient(#4ad5f6 0% 60%, #dbecf8 60% 100%);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -976,6 +976,7 @@ input:hover {
 
 .rates {
   text-align: center;
+  padding: 10% 0 5% 0;
 }
 .rates .dd-rates {
   padding: 10px 14px;
