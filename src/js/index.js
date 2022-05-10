@@ -48,6 +48,7 @@ buttons.forEach((button) => {
         const currentPage = document.querySelector('.content.active');       
         const gotopageNumber = button.getAttribute('gotopageNumber');
         
+        
             currentPage.classList.remove('active');
             content[gotopageNumber].classList.add('active');
         
@@ -109,13 +110,15 @@ inputs.forEach((input) => {
     
 })
 
-
 function isEmpty(){
     let valid = false;
         const isValid = checkAllInputValid('.content.active', valid);
     if(isValid){
         document.querySelector('.content.active .gotoNextPage').removeAttribute('disabled');
+    }else{
+        document.querySelector('.content.active .gotoNextPage').setAttribute('disabled',true);
     }
 }
+
 
 
