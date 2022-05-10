@@ -5,12 +5,6 @@ const SvgSpritemap = require('svg-spritemap-webpack-plugin');
 const {
   CleanWebpackPlugin
 } = require('clean-webpack-plugin');
-// const ImageminPlugin = require("imagemin-webpack");
-
-
-
-// const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
-// const { extendDefaultPlugins } = require("svgo");
 
 module.exports = {
   mode: 'development',
@@ -30,35 +24,7 @@ module.exports = {
       },
 
 
-      // {
-      //   test: /\.(jpe?g|png|gif|svg)$/i,
-      //   use: [
-      //     {
-      //       loader: "file-loader",
-      //       options:{
-      //         outputpath: 'images',
-      //         publicPath: 'images',
-      //         emitfile: true,
-
-      //       }
-      //     },
-      //     {
-      //       loader: ImageminPlugin.loader,
-      //       options: {
-      //         bail: true,
-      //         imageminOptions: {
-      //           plugins: [
-      //             ["pngquant",{quality : [0.5, 0.5]}],
-      //             ["mozjpeg",{quality : 50, progressive:true }],
-      //             ["gifsicle",{interlaced:true, optimizationlevel:3 }],
-      //             })
-      //           ]
-      //         }
-      //       }
-      //     }
-      //   ]
-      // }
-
+      
     ]
   },
 
@@ -93,45 +59,6 @@ module.exports = {
       },
     }),
   ],
-
-
-
-  // optimization: {
-  //   minimizer: [
-
-  //     new ImageMinimizerPlugin({
-  //       minimizer: {
-  //         implementation: ImageMinimizerPlugin.imageminMinify,
-  //         options: {
-  //           plugins: [
-  //             ["gifsicle", { interlaced: true }],
-  //             ["jpegtran", { progressive: true }],
-  //             ["optipng", { optimizationLevel: 5 }],
-  //             // Svgo configuration here https://github.com/svg/svgo#configuration
-  //             // [
-  //             //   "svgo",
-  //             //   {
-  //             //     plugins: extendDefaultPlugins([
-  //             //       {
-  //             //         name: "removeViewBox",
-  //             //         active: false,
-  //             //       },
-  //             //       {
-  //             //         name: "addAttributesToSVGElement",
-  //             //         params: {
-  //             //           attributes: [{ xmlns: "http://www.w3.org/2000/svg" }],
-  //             //         },
-  //             //       },
-  //             //     ]),
-  //             //   },
-  //             // ],
-  //           ],
-  //         },
-  //       },
-  //     }),
-  //   ]
-  // },
-
 
   devServer: {
     static: {
