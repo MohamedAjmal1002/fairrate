@@ -709,9 +709,26 @@ section {
 }
 .header .nav-bar .nav-menu {
   margin-right: 40px;
+  padding-bottom: 4px;
+  position: relative;
+}
+.header .nav-bar .nav-menu::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #919eab;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
 }
 .header .nav-bar .nav-menu:hover {
   color: #212b36;
+}
+.header .nav-bar .nav-menu:hover::after {
+  transform: scaleX(1);
 }
 
 .content-1 {
